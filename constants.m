@@ -1,22 +1,28 @@
 %%
 %constants
 
-%{
+%show pointcloud 1 = yes and 0 = no
+pc=1;
+
+
 %agents
-n = 100;
+n = 1000;
 
 %issues
 opinions = 3;
 
 %iterations
-iter = 200;
+iter = 100;
 
 %homophily
 h = 1;
 
+%divisionfactor for delta opinion
+c = 2;
+
 %parameter for the beta distribution -> 20.8 is uniform distribution
-x=20.8;
-%}
+x=2;
+
 %%
 beta = exp(x/30)-1;
 opvec = betarnd(beta,beta,n,opinions)*2-1;
@@ -35,9 +41,6 @@ end
 cont = ones(n,n);
 minus = -1*ones(n,1);
 cont = cont + diag(minus);
-
-%divisionfactor for delta opinion
-c = 2;
 
 %%
 %graph options

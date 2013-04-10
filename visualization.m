@@ -7,7 +7,7 @@ yv=1:iter;
 
 %meshc(xv,yv,data);
 surf1 = surf(xv,yv,data(:,:,1));
-set(surf1,'FaceColor','red','FaceAlpha',0.5,'EdgeColor','black');
+set(surf1,'FaceColor','red','FaceAlpha',0.5,'EdgeColor','black','EdgeAlpha',0.3);
 
 hold on;
 
@@ -31,21 +31,22 @@ hold on;
 
 surf5 = surf(xv,yv,data(:,:,5));
 set(surf5,'FaceColor','yellow','FaceAlpha',0.1,'EdgeColor','yellow');
-
-
-
-poldata = interp1(1:diststep:iter,poldata,1:iter,'linear');
-da = [100*poldata',-1*ones(length(yv),length(xv))];
-surf0 = surf(xv,yv,da);
-set(surf0,'FaceColor','red','FaceAlpha',0.1,'EdgeColor','black');
 %}
 
-axis([-1 1 0 iter 0 100]);
+
+poldata3d = interp1(1:diststep:iter,poldata,1:iter,'linear');
+%da = [100*poldata3d',-10*ones(length(yv),length(xv)-1)];
+
+%surf0 = surface(xv,yv,da);
+%set(surf0,'FaceColor','blue','FaceAlpha',0.5,'EdgeColor','black','EdgeAlpha',1);
+
+plot3(-1*ones(length(poldata3d)),yv,poldata3d*100);
+axis([-1 1 1 iter 0 100]);
 view(20,25);
 
 grid on;
 
-figure;
+%figure;
 
-area(linspace(0,iter,length(poldata)),poldata);
-axis([0 iter 0 1]);
+%area(linspace(1,iter,length(poldata)),poldata);
+%axis([1 iter 0 1]);

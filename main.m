@@ -12,7 +12,7 @@ global opinions;
 global iter;
 global h;
 
-uiwait(gui)
+%uiwait(gui)
 
 %%
 %initialization
