@@ -6,10 +6,10 @@ pc=0;
 
 
 %agents
-n = 201;
+n = 100;
 
 %issues
-opinions = 1;
+opinions = 3;
 
 %iterations
 iter = 100;
@@ -25,11 +25,9 @@ x=20.8;
 
 %%
 beta = exp(x/30)-1;
-%opvec = betarnd(beta,beta,n,opinions)*2-1;
+opvec = betarnd(beta,beta,n,opinions)*2-1;
 %opvec = [-0.6*ones(n/2,1),-0.6*ones(n/2,0),-0.6*ones(n/2,0)];
 %opvec = [opvec;[0.6*ones(n/2,1),0.6*ones(n/2,0),0.6*ones(n/2,0)]];
-
-opvec=[-1:0.01:1]';
 
 %relations between agents computed based on their opinions
 bez = zeros(n,n);
