@@ -27,6 +27,7 @@ for op=1:opinions
 end
 
 suptitle(strcat('Opinion Distribution, homophily: ',num2str(h)));
-
+%figure;
+%showPointCloud(n, opvec, opinions, 0, 0, 0, 1 );
 %area(linspace(1,iter,length(poldata)),poldata);
 %axis([1 iter 0 1]);

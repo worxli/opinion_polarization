@@ -4,15 +4,14 @@
 %show pointcloud 1 = yes and 0 = no
 pc=0;
 
-
 %agents
-n = 201;
+n = 100;
 
 %issues
-opinions = 1;
+opinions = 3;
 
 %iterations
-iter = 100;
+iter = 5000;
 
 %homophily
 h = 0;
@@ -21,15 +20,15 @@ h = 0;
 c = 2;
 
 %parameter for the beta distribution -> 20.8 is uniform distribution
-x=20.8;
+x=1;
 
 %%
 beta = exp(x/30)-1;
 %opvec = betarnd(beta,beta,n,opinions)*2-1;
-%opvec = [-0.6*ones(n/2,1),-0.6*ones(n/2,0),-0.6*ones(n/2,0)];
-%opvec = [opvec;[0.6*ones(n/2,1),0.6*ones(n/2,0),0.6*ones(n/2,0)]];
+opvec = [-0.5*ones(n/2,1),-0.5*ones(n/2,1),-0.5*ones(n/2,1)];
+opvec = [opvec;[0.5*ones(n/2,1),0.1*ones(n/2,1),0.5*ones(n/2,1)]];
 
-opvec=[-1:0.01:1]';
+%opvec=[-1:0.01:1]';
 
 %relations between agents computed based on their opinions
 bez = zeros(n,n);
@@ -67,3 +66,5 @@ data = zeros(opinions,piles+1,iter);
 poldata = [];
 
 diststep = iter/10;
+figure;
+%showPointCloud(n, opvec,opinions, 0, 0, 0, 1 );

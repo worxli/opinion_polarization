@@ -20,8 +20,8 @@ function gl = calGleichgewichte(n, opvec, bez, opinions, c)
     end
     
     %see if something has changed, if not the difference should be 0
-    topvec = opvec-topvec1;
-    tbez = bez-tbez1;
+    topvec = abs(opvec-topvec1);
+    tbez = abs(bez-tbez1);
     
     %if matrix and vector are zero try second possibility, otherwise
     %continue iteration because there is no need for a stop
@@ -40,8 +40,8 @@ function gl = calGleichgewichte(n, opvec, bez, opinions, c)
         end
         
         %see if something has changed, if not the difference should be 0
-        topvec = opvec-topvec2;
-        tbez = bez-tbez2;
+        topvec = abs(opvec-topvec2);
+        tbez = abs(bez-tbez2);
         
         if((sum(sum(tbez))==0)&(sum(topvec)==0))
             %gleichgewicht erreicht

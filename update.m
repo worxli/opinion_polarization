@@ -2,9 +2,7 @@ for loop=1:iter
     
     %%
     %show pointcloud
-    if(pc)
-        showPointCloud(n, opvec,opinions, 0, 0, 0 );
-    end
+    showPointCloud(n, opvec,opinions, 0, 0, 0, pc );
 
     %%
     %choose the agents
@@ -12,9 +10,7 @@ for loop=1:iter
     
     %%
     %show the chosen agents
-    if(pc)
-        showPointCloud(n, opvec,opinions, i, j, 1 )
-    end
+    showPointCloud(n, opvec,opinions, i, j, 1, pc )
     
     %%
     %opinion or weight first
@@ -36,18 +32,18 @@ for loop=1:iter
     
     %%
     %show the change of the opinion of the selected agents
-    if(pc)
-        showPointCloud(n, opvec,opinions, i, j, 0 )
-    end
+    showPointCloud(n, opvec,opinions, i, j, 0,pc )
     
     %%
     %create data for visualization
     data = createVisData( opvec, loop, step, data );
     
     %%
-    
     %calculate polarization
     if mod(loop,diststep)==0
+        %showPointCloud(n, opvec, opinions, 0, 0, 0, 1 );
+        %pause(0.1);
+        
         %calculate distance matrix
         dist = zeros(n,n);
         
@@ -76,15 +72,17 @@ for loop=1:iter
             break;
         end
         
+         %%
+        %gleichgewichte
+        gl = calGleichgewichte(n, opvec, bez, opinions, c);
+        if(gl==1)
+            disp('Gleichgewicht erreicht!');
+            break;
+        end
+        
     end
    
     
-    %%
-    %gleichgewichte
-    gl = calGleichgewichte(n, opvec, bez, opinions, c);
-    if(gl==1)
-        disp('Gleichgewicht erreicht!');
-        break;
-    end
+   
     
 end
