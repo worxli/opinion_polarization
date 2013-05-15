@@ -4,7 +4,7 @@
 % constants.m : constants
 
 clear all;
-profile on;
+%profile on;
 
 global x;
 global n;
@@ -25,4 +25,4 @@ update
 visualization
 
 %%
-profile viewer;
+%profile viewer;

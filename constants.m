@@ -19,15 +19,39 @@ h = 0;
 %divisionfactor for delta opinion
 c = 2;
 
+pa=5;
+
 %parameter for the beta distribution -> 20.8 is uniform distribution
-x=1;
+x=21;
 
 %%
 beta = exp(x/30)-1;
-%opvec = betarnd(beta,beta,n,opinions)*2-1;
-opvec = [-0.5*ones(n/2,1),-0.5*ones(n/2,1),-0.5*ones(n/2,1)];
-opvec = [opvec;[0.5*ones(n/2,1),0.1*ones(n/2,1),0.5*ones(n/2,1)]];
+opvec = betarnd(beta,beta,n,opinions)*2-1;
 
+%{
+%opvec = [-0.5*ones(n/2,1),-0.5*ones(n/2,1),-0.5*ones(n/2,1)];
+%opvec = [opvec;[0.5*ones(n/2,1),0.1*ones(n/2,1),0.5*ones(n/2,1)]];
+
+%one dimeonsion different
+%opvec = [opvec(:,1),opvec(:,2),-1*ones(n,1)];
+%opvec = [opvec(:,1),opvec(:,2),opvec(:,3)+[2*ones(n/2,1);zeros(n/2,1)]];
+
+%two dimensions different
+opvec = [opvec(:,1),-1*ones(n,2)];
+opvec = [opvec(:,1),[opvec(:,2),opvec(:,3)]+[2*ones(n/2,2);zeros(n/2,2)]];
+
+%two different with rand values
+a=-1; b=-0.5;
+opvec = [opvec(:,1),[a + (b-a).*rand(n/2,2);zeros(n/2,2)]];
+a=0.5; b=1;
+opvec = [opvec(:,1),[opvec(:,2),opvec(:,3)]+[zeros(n/2,2);a + (b-a).*rand(n/2,2)]];
+
+%different with rand values
+a=-1; b=-0.5;
+opvec = [a + (b-a).*rand(n/2,opinions);zeros(n/2,opinions)];
+a=0.5; b=1;
+opvec = [opvec]+[zeros(n/2,opinions);a + (b-a).*rand(n/2,opinions)];
+%}
 %opvec=[-1:0.01:1]';
 
 %relations between agents computed based on their opinions
@@ -66,5 +90,5 @@ data = zeros(opinions,piles+1,iter);
 poldata = [];
 
 diststep = iter/10;
-figure;
+%figure;
 %showPointCloud(n, opvec,opinions, 0, 0, 0, 1 );

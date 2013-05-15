@@ -1,5 +1,7 @@
 for loop=1:iter
     
+    %disp('\niter:');
+   %loop
     %%
     %show pointcloud
     showPointCloud(n, opvec,opinions, 0, 0, 0, pc );
@@ -18,16 +20,18 @@ for loop=1:iter
     
     if(p>0.5)   
         %weight
-        bez = upWeight( i, j, bez, opvec, opinions );
+        bez = upWeight( i, j, bez, opvec, opinions, pa );
         
         %opinion
         opvec = upOpinion( i, j, bez, opvec, opinions, c );  
+        %opvec = degrootOp( i, j, bez, opvec, opinions, c );  
     else  
         %opinion
         opvec = upOpinion( i, j, bez, opvec, opinions, c );
+        %opvec = degrootOp( i, j, bez, opvec, opinions, c );
         
         %weight
-        bez = upWeight( i, j, bez, opvec, opinions );     
+        bez = upWeight( i, j, bez, opvec, opinions, pa );     
     end
     
     %%
@@ -74,7 +78,7 @@ for loop=1:iter
         
          %%
         %gleichgewichte
-        gl = calGleichgewichte(n, opvec, bez, opinions, c);
+        gl = calGleichgewichte(n, opvec, bez, opinions, c, pa);
         if(gl==1)
             disp('Gleichgewicht erreicht!');
             break;

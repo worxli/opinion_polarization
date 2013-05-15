@@ -1,4 +1,4 @@
-function [pol, cluster, iterations, op] = simulation( n, c, r, opinion, homophily, pa )
+function [pol, cluster, iterations, op] = simulation( n, c, r, opinion, homophily )
 
 %%
 %set up constants
@@ -32,7 +32,7 @@ minus = -1*ones(n,1);
 cont = cont + diag(minus);
 
 %%
-[ pol, cluster, iterations, op ] = simupdate( r, n, c, iter, h, opinions, opvec, bez, cont, pa );
+[ pol, cluster, iterations, op ] = simupdate( r, n, c, iter, h, opinions, opvec, bez, cont );
 
 end
 

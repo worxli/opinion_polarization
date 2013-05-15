@@ -1,4 +1,4 @@
-function [ pol, cluster, loop, op ] = simpudate( r, n, c, iter, h, opinions, opvec, bez, cont, pa )    
+function [ pol, cluster, loop, op ] = simpudate( r, n, c, iter, h, opinions, opvec, bez, cont )    
     
     %showPointCloud(n, opvec,opinions, 0, 0, 0, 1 );
     
@@ -14,7 +14,7 @@ function [ pol, cluster, loop, op ] = simpudate( r, n, c, iter, h, opinions, opv
 
         if(p>0.5)   
             %weight
-            bez = upWeight( i, j, bez, opvec, opinions, pa );
+            bez = upWeight( i, j, bez, opvec, opinions );
 
             %opinion
             opvec = upOpinion( i, j, bez, opvec, opinions, c );  
@@ -23,7 +23,7 @@ function [ pol, cluster, loop, op ] = simpudate( r, n, c, iter, h, opinions, opv
             opvec = upOpinion( i, j, bez, opvec, opinions, c );
 
             %weight
-            bez = upWeight( i, j, bez, opvec, opinions, pa );     
+            bez = upWeight( i, j, bez, opvec, opinions );     
         end
 
         %%
@@ -43,9 +43,9 @@ function [ pol, cluster, loop, op ] = simpudate( r, n, c, iter, h, opinions, opv
         diststep=1;
         if mod(loop,diststep)==0
             
-            disp(strcat(strcat(strcat('run: ',num2str(r)), strcat(' h: ',num2str(h))), strcat(' check equilibrium at: ',num2str(loop))));
+            %disp(strcat(strcat(strcat('run: ',num2str(r)), strcat(' h: ',num2str(h))), strcat(' check equilibrium at: ',num2str(loop))));
             %gleichgewichte
-            gl = calGleichgewichte(n, opvec, bez, opinions, c, pa);
+            gl = calGleichgewichte(n, opvec, bez, opinions, c);
             if(gl==1)
 
                 %calculate polarization
