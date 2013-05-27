@@ -27,6 +27,7 @@ function [ pol, cluster, loop, op ] = simpudate( r, n, c, iter, h, opinions, opv
         end
 
         %%
+        %{
         if(loop<500)
             diststep=50;
         elseif(loop<5000)
@@ -40,83 +41,42 @@ function [ pol, cluster, loop, op ] = simpudate( r, n, c, iter, h, opinions, opv
         else
             diststep=500000;
         end
-        diststep=1;
+        %diststep=5000;
         if mod(loop,diststep)==0
             
             disp(strcat(strcat(strcat('run: ',num2str(r)), strcat(' h: ',num2str(h))), strcat(' check equilibrium at: ',num2str(loop))));
             %gleichgewichte
             gl = calGleichgewichte(n, opvec, bez, opinions, c, pa);
             if(gl==1)
-
-                %calculate polarization
-                
-                %calculate distance matrix
-                dist = zeros(n,n);
-
-                for ii=1:n
-                    for jj=1:n
-                        dist(ii,jj) = norm(opvec(ii,:)-opvec(jj,:),1)/(opinions);
-                    end
-                end
-
-                %average distance
-                avdist = sum(sum(dist))/(n*n);
-                pol = 0;
-
-                %calculate polarization
-                for ii=1:n
-                    for jj=ii:n
-                        pol=pol+(avdist-norm(dist(ii,jj),1)/opinions)^2;
-                    end
-                end
-
-                pol = pol*2/(n*n+n);
-                
+                  
                 %opvec
                 %pause( 1)
                 %showPointCloud(n, opvec,opinions, 0, 0, 0, 1 );
                 %pause(0.5)
                 
-                %op
-                op = sum(sum(opvec))/(n*opinions);
-
-                %cluster
-                opvec = unique(opvec,'rows');
-                [cluster,~] = size(opvec);
+                %get loop data
+                [ pol, op, cluster] = simData(n, opvec, opinions  )
 
 
                 return
             end
         end
-    end
-    
-    %calculate polarization
+        
+        %}
+        %disp(strcat(strcat(strcat('run: ',num2str(r)), strcat(' h: ',num2str(h))), strcat(' check equilibrium at: ',num2str(loop))));
+        %gleichgewichte
+        gl = calGleichgewichte(n, opvec, bez, opinions, c, pa);
+        if(gl==1)
             
-    %calculate distance matrix
-    dist = zeros(n,n);
-    
-    for ii=1:n
-        for jj=1:n
-            dist(ii,jj) = norm(opvec(ii,:)-opvec(jj,:),1)/(opinions);
+            %get loop data
+            [ pol, op, cluster] = simData(n, opvec, opinions  );
+            
+            return
         end
+            
     end
     
-    %average distance
-    avdist = sum(sum(dist))/(n*n);
-    pol = 0;
+    %get loop data, only if loop at end -> ca. 10^10 iterations
+    [ pol, op, cluster] = simData(n, opvec, opinions  )
     
-    %calculate polarization
-    for ii=1:n
-        for jj=ii:n
-            pol=pol+(avdist-norm(dist(ii,jj),1)/opinions)^2;
-        end
-    end
     
-    pol = pol*2/(n*n+n);
-    
-    %op
-    op = sum(sum(opvec))/(n*opinions);
-    
-    %cluster
-    opvec = unique(opvec,'rows');
-    [cluster,~] = size(opvec);

@@ -5,13 +5,13 @@
 pc=0;
 
 %agents
-n = 100;
+n = 20;
 
 %issues
 opinions = 3;
 
 %iterations
-iter = 5000;
+iter = 10000;
 
 %homophily
 h = 0;
@@ -19,14 +19,17 @@ h = 0;
 %divisionfactor for delta opinion
 c = 2;
 
-pa=5;
+pa=1;
 
 %parameter for the beta distribution -> 20.8 is uniform distribution
 x=21;
 
 %%
 beta = exp(x/30)-1;
-opvec = betarnd(beta,beta,n,opinions)*2-1;
+%opvec = betarnd(beta,beta,n,opinions)*2-1;
+
+a=-1;b=1;
+opvec = a + (b-a).*rand(n,opinions);
 
 %{
 %opvec = [-0.5*ones(n/2,1),-0.5*ones(n/2,1),-0.5*ones(n/2,1)];
@@ -52,7 +55,8 @@ opvec = [a + (b-a).*rand(n/2,opinions);zeros(n/2,opinions)];
 a=0.5; b=1;
 opvec = [opvec]+[zeros(n/2,opinions);a + (b-a).*rand(n/2,opinions)];
 %}
-%opvec=[-1:0.01:1]';
+
+%opvec=[[-1:0.01:1]',[-1:0.01:1]',[-1:0.01:1]'];
 
 %relations between agents computed based on their opinions
 bez = zeros(n,n);

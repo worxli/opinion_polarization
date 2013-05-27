@@ -1,17 +1,18 @@
 function gl = calGleichgewichte(n, opvec, bez, opinions, c, pa)
     
     %temporary veriables
-    topvec1 = opvec;
-    topvec2 = opvec;
-    tbez1 = bez;
-    tbez2 = bez;
+    topvec1 = mvpa(opvec,4);
+    topvec2 = mvpa(opvec,4);
+    tbez1 = mvpa(bez,4);
+    tbez2 = mvpa(bez,4);
+    opvec = mvpa(opvec,4);
     
     %first possibility: weight first
     for ii=1:n
         for jj=ii+1:n
             
            	%weight
-            tbez1 = upWeight( ii, jj, tbez1, topvec1, opinions ,pa);
+            tbez1 = upWeight( ii, jj, tbez1, topvec1, opinions, pa);
 
             %opinion
             topvec1 = upOpinion( ii, jj, tbez1, topvec1, opinions, c );  
@@ -46,6 +47,7 @@ function gl = calGleichgewichte(n, opvec, bez, opinions, c, pa)
         if((sum(sum(tbez))==0)&(sum(topvec)==0))
             %gleichgewicht erreicht
             gl=1;
+            disp('gleichgewicht');
         else
             %kein gleichgewicht
             gl=0;

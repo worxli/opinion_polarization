@@ -2,28 +2,21 @@ clear all;
 
 addpath funcs;
 %%
-%create some log
-%formatOut = 'mm-dd-yy';
-%date = datestr(now,formatOut);
-%formatTime = 'HH-MM-SS';
-%time = datestr(now,formatTime);
-%folder = ['logs\' date];
-n=100;
+
+n=5;
 c=2;
-%diary (name);
 
 %%
-%profile on;
-matlabpool close force local
-%matlabpool('myprof', 4);
-matlabpool('local', 12);
+%matlabpool close force local
+%matlabpool('myprof', 2);
+%matlabpool('local', 12);
 
 
-runs=50;
+runs=10;
 hn=0:5;
 hnn = num2cell(hn');
 
-for pa=4:6
+for pa=3:0.1:4
     
     bname = ['agents-' num2str(n) '-a-' num2str(pa) '-'];
     
@@ -35,6 +28,8 @@ for pa=4:6
         op = [];
 
        for h=hn
+           
+           disp(strcat(strcat('starting: ',num2str(pa)),strcat(' h: ',num2str(h))));
 
            tpol=zeros(runs,1);
            tcluster=zeros(runs,1);
@@ -48,7 +43,7 @@ for pa=4:6
            % end
            parfor r=1:runs
                [tpol(r), tcluster(r), titer(r), top(r)] = simulation( n, c, r, o, h, pa );
-               disp(strcat(strcat('finished run: ',num2str(r)),strcat(' h: ',num2str(h))));
+               %disp(strcat(strcat('finished run: ',num2str(r)),strcat(' h: ',num2str(h))));
                %fprintf(fileID,'run %d -- ',r);
                %fprintf(fileID,'%8.4f %d %d %12.8f\n',tpol(r),tcluster(r),titer(r),top(r));
            end
@@ -81,11 +76,8 @@ for pa=4:6
 
        name = ['figs' '/' bname 'op' num2str(o) '.png'];
        print('-dpng',name);
-       %saveas(h,name)
     end
     
 end
 
-%profile viewer;
-%matlabpool close
-%diary off
+matlabpool close

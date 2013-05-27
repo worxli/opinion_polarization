@@ -4,7 +4,7 @@ for loop=1:iter
    %loop
     %%
     %show pointcloud
-    showPointCloud(n, opvec,opinions, 0, 0, 0, pc );
+    %showPointCloud(n, opvec,opinions, 0, 0, 0, pc );
 
     %%
     %choose the agents
@@ -12,7 +12,7 @@ for loop=1:iter
     
     %%
     %show the chosen agents
-    showPointCloud(n, opvec,opinions, i, j, 1, pc )
+    %showPointCloud(n, opvec,opinions, i, j, 1, pc )
     
     %%
     %opinion or weight first
@@ -36,39 +36,26 @@ for loop=1:iter
     
     %%
     %show the change of the opinion of the selected agents
-    showPointCloud(n, opvec,opinions, i, j, 0,pc )
+    %showPointCloud(n, opvec,opinions, i, j, 0,pc )
     
     %%
     %create data for visualization
     data = createVisData( opvec, loop, step, data );
     
     %%
+    diststep = 1;
+    
+    disp(strcat(strcat(strcat('run: ',num2str(1)), strcat(' h: ',num2str(h))), strcat(' check equilibrium at: ',num2str(loop))));
+    %gleichgewichte
+    opvec'
+        
     %calculate polarization
     if mod(loop,diststep)==0
         %showPointCloud(n, opvec, opinions, 0, 0, 0, 1 );
         %pause(0.1);
         
-        %calculate distance matrix
-        dist = zeros(n,n);
+        pol = calPol(n,opvec, opinions);
         
-        for ii=1:n
-            for jj=1:n
-                dist(ii,jj) = norm(opvec(ii,:)-opvec(jj,:),1)/(opinions);
-            end
-        end
-        
-        %average distance
-        avdist = sum(sum(dist))/(n*n);
-        pol = 0;
-        
-        %calculate polarization
-        for ii=1:n
-            for jj=ii:n
-                pol=pol+(avdist-norm(dist(ii,jj),1)/opinions)^2;
-            end
-        end
-        
-        pol = pol*2/(n*n+n);
         poldata = [poldata;pol];
         
         if pol==1 || pol ==0
@@ -85,8 +72,5 @@ for loop=1:iter
         end
         
     end
-   
-    
-   
     
 end

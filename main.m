@@ -6,12 +6,13 @@
 clear all;
 %profile on;
 
+%{
 global x;
 global n;
 global opinions;
 global iter;
 global h;
-
+%}
 %uiwait(gui)
 
 %%
