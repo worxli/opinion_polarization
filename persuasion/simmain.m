@@ -2,46 +2,66 @@ clear all;
 
 addpath funcs;
 
+sim = true;
+details = true;
+
 %%
-%matlabpool close force local
-%matlabpool('myprof', 4);
-%matlabpool('local', 12);
+if(sim)
+    %matlabpool('local', 12);
+end
 
 %profile on
 
 %agents
-n=30;
+n=50;
 
 %runs
-runs=5;
+runs=1;
 
 %homophily
-h=5;
-
-%a (only used in rejection)
-pa=1;
+h=11;
 
 %issues (1 to 3)
+%set to one
 opinions=1;
 
 %iterations
-iter=1000;
+iter=2000;
 
 %arguments (only persuasion)
-k=10;
+k=5;
 
-%exp -> no overshooting
-c=1;
+%exp for relevance -> no overshooting
+cr = 1;
+
+%exp for argument
+ca = 1;
 
 %all agents know each other -> all 1's
 cont = ones(n,n);
 minus = -1*ones(n,1);
 cont = cont + diag(minus);
     
-for r=1:runs
+jobindex=str2double(getenv('LSB_JOBINDEX'));
+
+for hh=h
+    
+    %seed=cputime*1000;
+    seed = [42136110];
+    s = RandStream('mt19937ar','Seed',seed);
+    RandStream.setGlobalStream(s);
 
     %create relevance matrix
     rel = rand(k,opinions,n);
+    
+    %{
+    rel = zeros(k,opinions,n);
+    for op=1:opinions
+        for i=1:n
+            rel(randi(k,1),op,i)=1;
+        end
+    end
+    %}
     
     %bias sum to 1
     for i=1:n
@@ -52,42 +72,38 @@ for r=1:runs
     end
     
     %argument vector
-    a=-1;b=1;
-    argmat = a + (b-a).*rand(k,opinions,n);
+    %a=-1;b=1;
+    %argmat = a + (b-a).*rand(k,opinions,n); 
     
-    %{
-    %create relevance vectors
-    for i=1:n
-        for l=1:opinions
-            rel(:,l,i)=randfixedsum(k,1);
-            
-            %{
-            trel = randfixedsum(k,1);
-            topvec = trel'*argvec(:,l);
-            while(topvec(end)>(opvec(i,l)+0.1) || topvec(end)<(opvec(i,l)-0.1))
-                trel = randfixedsum(k,1);
-                topvec = [topvec;trel'*argvec(:,l)];
+    argmat = zeros(k,opinions,n);
+    
+    for kk=1:k
+        for oo=1:opinions
+            if kk<k/2+1
+                argmat(kk,oo,:) = rand(1,1,n);
+            else
+                argmat(kk,oo,:) = (-1).*rand(1,1,n);
             end
-            rel(:,l,i)=trel
-            %}
         end
     end
-    %}
-    
     
     %set struct as argument
-    arg = struct('agents',n,'maxiter',iter,'opinions',opinions,'arguments',k,'cexp',c,'cont',cont,'relevancematrix',rel,'argumentmatrix',argmat,'homophily',h);
-    
-    %arg.rel = rel;
-    
+    arg = struct('agents',n,'maxiter',iter,'opinions',opinions,'arguments',k,'caexp', ca, 'crexp',cr,'cont',cont,'relevancematrix',rel,'argumentmatrix',argmat,'homophily',hh,'run',jobindex,'h',hh);
+    arg.sim=false;
+    arg.jobindex = jobindex;
+    arg.details = details;
+    arg.seed = seed;
+   
     %calculate opinionvector from relevance and arguments
     arg.opvec = calcOpvec(arg);
     
     %%
-    arg = simupdate(arg);
-
+    %do simulation or visualizing
+    if(sim)
+        arg.sim=true;
+        arg.maxiter=10^10;
+        simupdate(arg);
+    else
+        arg = simupdate(arg);
+    end
 end
-
-%profile viewer
-
-%matlabpool close

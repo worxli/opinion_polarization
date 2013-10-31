@@ -2,19 +2,40 @@ clear all;
 
 addpath funcs;
 
-%%
-matlabpool close force local
-%matlabpool('myprof', 4);
-matlabpool('local', 12);
+sim = true;
+details = false;
 
-n=10;
-runs=50;
-h=0;
-pa=1;
+%agents
+n=20;
+
+%runs
+runs=2;
+
+%homophily
+h=0:10;
+
+%issues (1 to 3)
+%set to one
 opinions=1;
-iter=10^8;
     
-    parfor r=1:runs
+%iterations
+iter=2000;
+
+%a
+pa=1;
+
+%all agents know each other -> all 1's
+cont = ones(n,n);
+minus = -1*ones(n,1);
+cont = cont + diag(minus);
+
+jobindex=str2double(getenv('LSB_JOBINDEX'));
+    
+for hh=h
+    
+    seed=cputime*1000;
+    s = RandStream('mt19937ar','Seed',seed);
+    RandStream.setGlobalStream(s);
 
     %create opvec
     a=-1;b=1;
@@ -35,9 +56,21 @@ iter=10^8;
     minus = -1*ones(n,1);
     cont = cont + diag(minus);
 
+    %set struct as argument
+    arg = struct('agents',n,'maxiter',iter,'opinions',opinions,'cont',cont,'homophily',hh,'run',jobindex,'pa',pa,'opvec',opvec,'bez',bez,'c',2,'h',hh);
+    arg.sim=false;
+    arg.jobindex = jobindex;
+    arg.details = details;
+    arg.seed = seed;
+    
     %%
-    simupdate( r, n, 2, iter, h, opinions, opvec, bez, cont, pa );
-
+    %do simulation or visualizing
+    if(sim)
+        arg.sim=true;
+        arg.maxiter=10^3;
+        simupdate(arg);
+    else
+        arg = simupdate(arg);
     end
 
-matlabpool close
+end

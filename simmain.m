@@ -1,83 +1,72 @@
 clear all;
 
-addpath funcs;
-%%
+addpath ../funcs;
 
-n=5;
-c=2;
+sim = true;
+details = false;
 
-%%
-%matlabpool close force local
-%matlabpool('myprof', 2);
-%matlabpool('local', 12);
+%agents
+n=10;
 
+%homophily
+h=0:10;
 
-runs=10;
-hn=0:5;
-hnn = num2cell(hn');
+%issues (1 to 3)
+%set to one
+opinions=1;
 
-for pa=3:0.1:4
+%a
+%pa=1;
+aa=1:0.25:2;
+
+%all agents know each other -> all 1's
+cont = ones(n,n);
+minus = -1*ones(n,1);
+cont = cont + diag(minus);
+
+jobindex=str2double(getenv('LSB_JOBINDEX'));
+
+for pa=aa
+for hh=h
     
-    bname = ['agents-' num2str(n) '-a-' num2str(pa) '-'];
-    
-    for o=1:3
+    seed=cputime*1000;
+    s = RandStream('mt19937ar','Seed',seed);
+    RandStream.setGlobalStream(s);
 
-        pol = [];
-        cluster = [];
-        iter = [];
-        op = [];
+    %create opvec
+    a=-1;b=1;
+    opvec = a + (b-a).*rand(n,opinions);
 
-       for h=hn
-           
-           disp(strcat(strcat('starting: ',num2str(pa)),strcat(' h: ',num2str(h))));
-
-           tpol=zeros(runs,1);
-           tcluster=zeros(runs,1);
-           titer=zeros(runs,1);
-           top=zeros(runs,1);
-
-           %name = [bname 'op-' num2str(o) '-homo-' num2str(h)  '.txt'];
-           %[fileID, msg] = fopen(name,'a');
-           %if fileID == -1
-           %     error(msg);
-           % end
-           parfor r=1:runs
-               [tpol(r), tcluster(r), titer(r), top(r)] = simulation( n, c, r, o, h, pa );
-               %disp(strcat(strcat('finished run: ',num2str(r)),strcat(' h: ',num2str(h))));
-               %fprintf(fileID,'run %d -- ',r);
-               %fprintf(fileID,'%8.4f %d %d %12.8f\n',tpol(r),tcluster(r),titer(r),top(r));
-           end
-           %fclose(fileID);
-
-           pol = [pol,tpol];
-           cluster = [cluster,tcluster];
-           iter = [iter,titer];
-           op = [op,top];
-
-
-       end
-       h=figure('Name',strcat('Issues: ',num2str(o)));
-       subplot(2,2,1);
-       boxplot(pol,'labels',hnn)
-       xlabel('Homophily');
-       ylabel('Polarization');
-       subplot(2,2,2);
-       boxplot(cluster,'labels',hnn)
-       xlabel('Homophily');
-       ylabel('Custers');
-       subplot(2,2,3);
-       boxplot(iter,'labels',hnn)
-       xlabel('Homophily');
-       ylabel('iterations needed');
-       subplot(2,2,4);
-       boxplot(op,'labels',hnn);
-       xlabel('Homophily');
-       ylabel('average opinion (weigthed over opinions)');
-
-       name = ['figs' '/' bname 'op' num2str(o) '.png'];
-       print('-dpng',name);
+    %create bez
+    bez = zeros(n,n);
+    for i=1:n
+        for j=i+1:n
+           diff = norm(opvec(i,:)-opvec(j,:),1);
+           bez(i,j) = 1 - diff/opinions;
+           bez(j,i) = 1 - diff/opinions; 
+        end
     end
-    
-end
 
-matlabpool close
+    %all agents know each other -> all 1's
+    cont = ones(n,n);
+    minus = -1*ones(n,1);
+    cont = cont + diag(minus);
+
+    %set struct as argument
+    arg = struct('agents',n,'opinions',opinions,'cont',cont,'homophily',hh,'run',jobindex,'pa',pa,'opvec',opvec,'bez',bez,'c',2,'h',hh);
+    arg.sim=false;
+    arg.jobindex = jobindex;
+    arg.details = details;
+    arg.seed = seed;
+    
+    %%
+    %do simulation or visualizing
+    if(sim)
+        arg.sim=true;
+        arg.maxiter=10^10;
+        simupdate(arg);
+    else
+        arg = simupdate(arg);
+    end
+end
+end

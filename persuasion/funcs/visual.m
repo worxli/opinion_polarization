@@ -1,4 +1,4 @@
-function [  ] = visual( arg, data, pol)
+function [ ] = visual( arg, data, pol)
 
     iter=arg.maxiter;
     opinions=arg.opinions;
@@ -15,13 +15,15 @@ function [  ] = visual( arg, data, pol)
         set(gcf,'renderer', 'zbuffer'); 
 
         data=data/n*100;
-        xv=-1:0.01:1;
+        xv=-1:0.02:1;
         yv=1:iter;
 
         for op=1:opinions
             subplot(1,opinions,op); 
-            surf1 = mesh(xv,yv,squeeze(data(op,:,:))');
-            set(surf1,'FaceColor','red','FaceAlpha',1,'EdgeColor','black','EdgeAlpha',0.1);
+            surf1 = surf(xv,yv,squeeze(data(op,:,:))');
+            colormap(flipud(gray));
+            colorbar
+            %set(surf1,'FaceColor','red','FaceAlpha',1,'EdgeColor','black','EdgeAlpha',0.1);
             %hold on;
            % plot3(-1*ones(length(poldata3d)),yv,poldata3d*100);
             axis([-1 1 1 iter 0 100]);
@@ -44,7 +46,10 @@ function [  ] = visual( arg, data, pol)
     if(~isempty(pol))
         figure;
         plot(pol);
+       
     end
+    
+    save 'data.mat' data
 
 end
 

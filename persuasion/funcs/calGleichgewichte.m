@@ -1,61 +1,43 @@
-function gl = calGleichgewichte(n, opvec, bez, opinions, c, pa)
+function gl = calGleichgewichte(arg)
     
-    %temporary veriables
-    topvec1 = mvpa(opvec,4);
-    topvec2 = mvpa(opvec,4);
-    tbez1 = mvpa(bez,4);
-    tbez2 = mvpa(bez,4);
-    opvec = mvpa(opvec,4);
+    n = arg.agents;
+    k = arg.arguments;
+    opvec = mvpa(arg.opvec,4);
+    op = arg.opinions;
+    h = arg.homophily;
+    gl = false;
+    rel = arg.relevancematrix;
+    argm = arg.argumentmatrix;
     
-    %first possibility: weight first
-    for ii=1:n
-        for jj=ii+1:n
+    %sum(abs(opvec))
+    if sum(abs(opvec))==n
+        
+        if (abs(sum(opvec))==n&&h==0)||h>0
             
-           	%weight
-            tbez1 = upWeight( ii, jj, tbez1, topvec1, opinions, pa);
-
-            %opinion
-            topvec1 = upOpinion( ii, jj, tbez1, topvec1, opinions, c );  
+            %find two groups
+            gr1 = find(opvec==1);
+            gr2 = find(opvec==-1);
             
-        end
-    end
-    
-    %see if something has changed, if not the difference should be 0
-    topvec = abs(opvec-topvec1);
-    tbez = abs(bez-tbez1);
-    
-    %if matrix and vector are zero try second possibility, otherwise
-    %continue iteration because there is no need for a stop
-    if((sum(sum(tbez))==0)&(sum(topvec)==0))
-        %second possibility: 
-        for ii=1:n
-            for jj=ii+1:n
-
-                %opinion
-                topvec2 = upOpinion( ii, jj, tbez2, topvec2, opinions, c ); 
-
-                %weight
-                tbez2 = upWeight( ii, jj, tbez2, topvec2, opinions, pa );
-
+            %%
+            %process group one, positive opinion
+            %find all indexes for relevances greater than 0
+            rel1 = find(rel(:,1,gr1)>0.0001);
+            
+            %create temp argumentmatrix, only agents which belong to the
+            %group
+            tmp1 = argm(:,1,gr1);
+            
+            %%
+            %group two, negative opinion
+            rel2 = find(rel(:,1,gr2)>0.0001);
+            tmp2 = argm(:,1,gr2);
+            
+            %%
+            %check if number of arguments which are one is the same as
+            %number of relevances greater than 0
+            if (length(find(tmp1(rel1)==1))==length(rel1))&&(length(find(tmp2(rel2)==-1))==length(rel2))
+                gl=true;
             end
         end
-        
-        %see if something has changed, if not the difference should be 0
-        topvec = abs(opvec-topvec2);
-        tbez = abs(bez-tbez2);
-        
-        if((sum(sum(tbez))==0)&(sum(topvec)==0))
-            %gleichgewicht erreicht
-            gl=1;
-            %disp('gleichgewicht');
-        else
-            %kein gleichgewicht
-            gl=0;
-        end
-        
-    else
-        %kein gleichgewicht
-        gl=0;
     end
-
 end

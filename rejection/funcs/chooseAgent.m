@@ -1,5 +1,12 @@
-function [i,j] = chooseAgent( n,opvec,opinions,h )
-
+function [i,j] = chooseAgent( arg )
+    
+    %retrieve arguments
+    n = arg.agents;
+    opvec = arg.opvec;
+    opinions = arg.opinions;
+    h = arg.homophily;
+    
+    %%
     %chose random agent -> i
     i = randi(n,1);
     
@@ -10,11 +17,10 @@ function [i,j] = chooseAgent( n,opvec,opinions,h )
     end
     hdist=hdist./(2*opinions);
     
-    
-    
     %make sure connection values are between 0 and 2 -> use h for strength
     %of homophily, if h=0 -> con=1 for all agents
     con = (2-hdist).^h;
+    
     
     %can't choose himself for interaction
     con(i)=0;

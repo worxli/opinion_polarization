@@ -1,0 +1,2623 @@
+Sender: LSF System <lsfadmin@a3069>
+Subject: Job 40010333[4]: <jobs[1-50]> Done
+
+Job <jobs[1-50]> was submitted from host <brutus1> by user <lukasbi> in cluster <brutus>.
+Job was executed on host(s) <a3069>, in queue <pub.8h>, as user <lukasbi> in cluster <brutus>.
+</cluster/home02/infk/lukasbi> was used as the home directory.
+</cluster/home02/infk/lukasbi/rej/agents20> was used as the working directory.
+Started at Fri Oct 25 16:18:38 2013
+Results reported at Fri Oct 25 16:19:01 2013
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+matlab -nodisplay -singleCompThread -r simmain
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :     18.27 sec.
+    Max Memory :        75 MB
+    Max Swap   :      1884 MB
+
+    Max Processes  :         3
+    Max Threads    :        18
+
+The output (if any) follows:
+
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2012 The MathWorks, Inc.
+                    R2012a (7.14.0.739) 64-bit (glnxa64)
+                              February 9, 2012
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+>> Sender: LSF System <lsfadmin@a3061>
+Subject: Job 40010333[3]: <jobs[1-50]> Done
+
+Job <jobs[1-50]> was submitted from host <brutus1> by user <lukasbi> in cluster <brutus>.
+Job was executed on host(s) <a3061>, in queue <pub.8h>, as user <lukasbi> in cluster <brutus>.
+</cluster/home02/infk/lukasbi> was used as the home directory.
+</cluster/home02/infk/lukasbi/rej/agents20> was used as the working directory.
+Started at Fri Oct 25 16:18:38 2013
+Results reported at Fri Oct 25 16:19:03 2013
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+matlab -nodisplay -singleCompThread -r simmain
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :     18.70 sec.
+    Max Memory :         1 MB
+    Max Swap   :        35 MB
+
+    Max Processes  :         1
+    Max Threads    :         1
+
+The output (if any) follows:
+
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2012 The MathWorks, Inc.
+                    R2012a (7.14.0.739) 64-bit (glnxa64)
+                              February 9, 2012
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+>> Sender: LSF System <lsfadmin@a3158>
+Subject: Job 40010333[1]: <jobs[1-50]> Done
+
+Job <jobs[1-50]> was submitted from host <brutus1> by user <lukasbi> in cluster <brutus>.
+Job was executed on host(s) <a3158>, in queue <pub.8h>, as user <lukasbi> in cluster <brutus>.
+</cluster/home02/infk/lukasbi> was used as the home directory.
+</cluster/home02/infk/lukasbi/rej/agents20> was used as the working directory.
+Started at Fri Oct 25 16:18:38 2013
+Results reported at Fri Oct 25 16:19:04 2013
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+matlab -nodisplay -singleCompThread -r simmain
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :     19.06 sec.
+    Max Memory :         4 MB
+    Max Swap   :        35 MB
+
+    Max Processes  :         1
+    Max Threads    :         1
+
+The output (if any) follows:
+
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2012 The MathWorks, Inc.
+                    R2012a (7.14.0.739) 64-bit (glnxa64)
+                              February 9, 2012
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+>> Sender: LSF System <lsfadmin@a3069>
+Subject: Job 40010333[5]: <jobs[1-50]> Done
+
+Job <jobs[1-50]> was submitted from host <brutus1> by user <lukasbi> in cluster <brutus>.
+Job was executed on host(s) <a3069>, in queue <pub.8h>, as user <lukasbi> in cluster <brutus>.
+</cluster/home02/infk/lukasbi> was used as the home directory.
+</cluster/home02/infk/lukasbi/rej/agents20> was used as the working directory.
+Started at Fri Oct 25 16:18:38 2013
+Results reported at Fri Oct 25 16:19:04 2013
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+matlab -nodisplay -singleCompThread -r simmain
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :     18.40 sec.
+    Max Memory :       150 MB
+    Max Swap   :      2006 MB
+
+    Max Processes  :         3
+    Max Threads    :        18
+
+The output (if any) follows:
+
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2012 The MathWorks, Inc.
+                    R2012a (7.14.0.739) 64-bit (glnxa64)
+                              February 9, 2012
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+>> Sender: LSF System <lsfadmin@a3167>
+Subject: Job 40010333[10]: <jobs[1-50]> Done
+
+Job <jobs[1-50]> was submitted from host <brutus1> by user <lukasbi> in cluster <brutus>.
+Job was executed on host(s) <a3167>, in queue <pub.8h>, as user <lukasbi> in cluster <brutus>.
+</cluster/home02/infk/lukasbi> was used as the home directory.
+</cluster/home02/infk/lukasbi/rej/agents20> was used as the working directory.
+Started at Fri Oct 25 16:19:46 2013
+Results reported at Fri Oct 25 16:20:10 2013
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+matlab -nodisplay -singleCompThread -r simmain
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :     18.50 sec.
+    Max Memory :         1 MB
+    Max Swap   :        34 MB
+
+    Max Processes  :         1
+    Max Threads    :         1
+
+The output (if any) follows:
+
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2012 The MathWorks, Inc.
+                    R2012a (7.14.0.739) 64-bit (glnxa64)
+                              February 9, 2012
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+>> Sender: LSF System <lsfadmin@a3150>
+Subject: Job 40010333[6]: <jobs[1-50]> Done
+
+Job <jobs[1-50]> was submitted from host <brutus1> by user <lukasbi> in cluster <brutus>.
+Job was executed on host(s) <a3150>, in queue <pub.8h>, as user <lukasbi> in cluster <brutus>.
+</cluster/home02/infk/lukasbi> was used as the home directory.
+</cluster/home02/infk/lukasbi/rej/agents20> was used as the working directory.
+Started at Fri Oct 25 16:19:46 2013
+Results reported at Fri Oct 25 16:20:10 2013
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+matlab -nodisplay -singleCompThread -r simmain
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :     18.74 sec.
+    Max Memory :        70 MB
+    Max Swap   :      1809 MB
+
+    Max Processes  :         3
+    Max Threads    :        17
+
+The output (if any) follows:
+
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2012 The MathWorks, Inc.
+                    R2012a (7.14.0.739) 64-bit (glnxa64)
+                              February 9, 2012
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+>> Sender: LSF System <lsfadmin@a3150>
+Subject: Job 40010333[7]: <jobs[1-50]> Done
+
+Job <jobs[1-50]> was submitted from host <brutus1> by user <lukasbi> in cluster <brutus>.
+Job was executed on host(s) <a3150>, in queue <pub.8h>, as user <lukasbi> in cluster <brutus>.
+</cluster/home02/infk/lukasbi> was used as the home directory.
+</cluster/home02/infk/lukasbi/rej/agents20> was used as the working directory.
+Started at Fri Oct 25 16:19:46 2013
+Results reported at Fri Oct 25 16:20:13 2013
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+matlab -nodisplay -singleCompThread -r simmain
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :     18.75 sec.
+    Max Memory :       158 MB
+    Max Swap   :      2006 MB
+
+    Max Processes  :         3
+    Max Threads    :        18
+
+The output (if any) follows:
+
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2012 The MathWorks, Inc.
+                    R2012a (7.14.0.739) 64-bit (glnxa64)
+                              February 9, 2012
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+>> Sender: LSF System <lsfadmin@a3165>
+Subject: Job 40010333[8]: <jobs[1-50]> Done
+
+Job <jobs[1-50]> was submitted from host <brutus1> by user <lukasbi> in cluster <brutus>.
+Job was executed on host(s) <a3165>, in queue <pub.8h>, as user <lukasbi> in cluster <brutus>.
+</cluster/home02/infk/lukasbi> was used as the home directory.
+</cluster/home02/infk/lukasbi/rej/agents20> was used as the working directory.
+Started at Fri Oct 25 16:19:46 2013
+Results reported at Fri Oct 25 16:20:13 2013
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+matlab -nodisplay -singleCompThread -r simmain
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :     19.06 sec.
+    Max Memory :        68 MB
+    Max Swap   :      1807 MB
+
+    Max Processes  :         3
+    Max Threads    :        17
+
+The output (if any) follows:
+
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2012 The MathWorks, Inc.
+                    R2012a (7.14.0.739) 64-bit (glnxa64)
+                              February 9, 2012
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+>> Sender: LSF System <lsfadmin@a3165>
+Subject: Job 40010333[9]: <jobs[1-50]> Done
+
+Job <jobs[1-50]> was submitted from host <brutus1> by user <lukasbi> in cluster <brutus>.
+Job was executed on host(s) <a3165>, in queue <pub.8h>, as user <lukasbi> in cluster <brutus>.
+</cluster/home02/infk/lukasbi> was used as the home directory.
+</cluster/home02/infk/lukasbi/rej/agents20> was used as the working directory.
+Started at Fri Oct 25 16:19:49 2013
+Results reported at Fri Oct 25 16:20:16 2013
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+matlab -nodisplay -singleCompThread -r simmain
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :     19.02 sec.
+    Max Memory :       158 MB
+    Max Swap   :      2006 MB
+
+    Max Processes  :         3
+    Max Threads    :        18
+
+The output (if any) follows:
+
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2012 The MathWorks, Inc.
+                    R2012a (7.14.0.739) 64-bit (glnxa64)
+                              February 9, 2012
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+>> Sender: LSF System <lsfadmin@a3070>
+Subject: Job 40010333[12]: <jobs[1-50]> Done
+
+Job <jobs[1-50]> was submitted from host <brutus1> by user <lukasbi> in cluster <brutus>.
+Job was executed on host(s) <a3070>, in queue <pub.8h>, as user <lukasbi> in cluster <brutus>.
+</cluster/home02/infk/lukasbi> was used as the home directory.
+</cluster/home02/infk/lukasbi/rej/agents20> was used as the working directory.
+Started at Fri Oct 25 16:20:56 2013
+Results reported at Fri Oct 25 16:21:18 2013
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+matlab -nodisplay -singleCompThread -r simmain
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :     17.91 sec.
+    Max Memory :         1 MB
+    Max Swap   :        35 MB
+
+    Max Processes  :         1
+    Max Threads    :         1
+
+The output (if any) follows:
+
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2012 The MathWorks, Inc.
+                    R2012a (7.14.0.739) 64-bit (glnxa64)
+                              February 9, 2012
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+>> Sender: LSF System <lsfadmin@a3113>
+Subject: Job 40010333[19]: <jobs[1-50]> Done
+
+Job <jobs[1-50]> was submitted from host <brutus1> by user <lukasbi> in cluster <brutus>.
+Job was executed on host(s) <a3113>, in queue <pub.8h>, as user <lukasbi> in cluster <brutus>.
+</cluster/home02/infk/lukasbi> was used as the home directory.
+</cluster/home02/infk/lukasbi/rej/agents20> was used as the working directory.
+Started at Fri Oct 25 16:20:56 2013
+Results reported at Fri Oct 25 16:21:19 2013
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+matlab -nodisplay -singleCompThread -r simmain
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :     18.39 sec.
+    Max Memory :         1 MB
+    Max Swap   :        34 MB
+
+    Max Processes  :         1
+    Max Threads    :         1
+
+The output (if any) follows:
+
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2012 The MathWorks, Inc.
+                    R2012a (7.14.0.739) 64-bit (glnxa64)
+                              February 9, 2012
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+>> Sender: LSF System <lsfadmin@a3033>
+Subject: Job 40010333[14]: <jobs[1-50]> Done
+
+Job <jobs[1-50]> was submitted from host <brutus1> by user <lukasbi> in cluster <brutus>.
+Job was executed on host(s) <a3033>, in queue <pub.8h>, as user <lukasbi> in cluster <brutus>.
+</cluster/home02/infk/lukasbi> was used as the home directory.
+</cluster/home02/infk/lukasbi/rej/agents20> was used as the working directory.
+Started at Fri Oct 25 16:20:56 2013
+Results reported at Fri Oct 25 16:21:19 2013
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+matlab -nodisplay -singleCompThread -r simmain
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :     17.48 sec.
+    Max Memory :         3 MB
+    Max Swap   :        34 MB
+
+    Max Processes  :         1
+    Max Threads    :         1
+
+The output (if any) follows:
+
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2012 The MathWorks, Inc.
+                    R2012a (7.14.0.739) 64-bit (glnxa64)
+                              February 9, 2012
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+>> Sender: LSF System <lsfadmin@a3165>
+Subject: Job 40010333[23]: <jobs[1-50]> Done
+
+Job <jobs[1-50]> was submitted from host <brutus1> by user <lukasbi> in cluster <brutus>.
+Job was executed on host(s) <a3165>, in queue <pub.8h>, as user <lukasbi> in cluster <brutus>.
+</cluster/home02/infk/lukasbi> was used as the home directory.
+</cluster/home02/infk/lukasbi/rej/agents20> was used as the working directory.
+Started at Fri Oct 25 16:20:56 2013
+Results reported at Fri Oct 25 16:21:19 2013
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+matlab -nodisplay -singleCompThread -r simmain
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :     18.52 sec.
+    Max Memory :        82 MB
+    Max Swap   :      1880 MB
+
+    Max Processes  :         3
+    Max Threads    :        18
+
+The output (if any) follows:
+
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2012 The MathWorks, Inc.
+                    R2012a (7.14.0.739) 64-bit (glnxa64)
+                              February 9, 2012
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+>> Sender: LSF System <lsfadmin@a3057>
+Subject: Job 40010333[16]: <jobs[1-50]> Done
+
+Job <jobs[1-50]> was submitted from host <brutus1> by user <lukasbi> in cluster <brutus>.
+Job was executed on host(s) <a3057>, in queue <pub.8h>, as user <lukasbi> in cluster <brutus>.
+</cluster/home02/infk/lukasbi> was used as the home directory.
+</cluster/home02/infk/lukasbi/rej/agents20> was used as the working directory.
+Started at Fri Oct 25 16:20:56 2013
+Results reported at Fri Oct 25 16:21:19 2013
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+matlab -nodisplay -singleCompThread -r simmain
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :     17.63 sec.
+    Max Memory :         1 MB
+    Max Swap   :        35 MB
+
+    Max Processes  :         1
+    Max Threads    :         1
+
+The output (if any) follows:
+
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2012 The MathWorks, Inc.
+                    R2012a (7.14.0.739) 64-bit (glnxa64)
+                              February 9, 2012
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+>> Sender: LSF System <lsfadmin@a3150>
+Subject: Job 40010333[21]: <jobs[1-50]> Done
+
+Job <jobs[1-50]> was submitted from host <brutus1> by user <lukasbi> in cluster <brutus>.
+Job was executed on host(s) <a3150>, in queue <pub.8h>, as user <lukasbi> in cluster <brutus>.
+</cluster/home02/infk/lukasbi> was used as the home directory.
+</cluster/home02/infk/lukasbi/rej/agents20> was used as the working directory.
+Started at Fri Oct 25 16:20:56 2013
+Results reported at Fri Oct 25 16:21:19 2013
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+matlab -nodisplay -singleCompThread -r simmain
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :     18.75 sec.
+    Max Memory :        87 MB
+    Max Swap   :      1884 MB
+
+    Max Processes  :         3
+    Max Threads    :        18
+
+The output (if any) follows:
+
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2012 The MathWorks, Inc.
+                    R2012a (7.14.0.739) 64-bit (glnxa64)
+                              February 9, 2012
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+>> Sender: LSF System <lsfadmin@a3017>
+Subject: Job 40010333[17]: <jobs[1-50]> Done
+
+Job <jobs[1-50]> was submitted from host <brutus1> by user <lukasbi> in cluster <brutus>.
+Job was executed on host(s) <a3017>, in queue <pub.8h>, as user <lukasbi> in cluster <brutus>.
+</cluster/home02/infk/lukasbi> was used as the home directory.
+</cluster/home02/infk/lukasbi/rej/agents20> was used as the working directory.
+Started at Fri Oct 25 16:20:56 2013
+Results reported at Fri Oct 25 16:21:20 2013
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+matlab -nodisplay -singleCompThread -r simmain
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :     18.30 sec.
+    Max Memory :        62 MB
+    Max Swap   :      1808 MB
+
+    Max Processes  :         3
+    Max Threads    :        17
+
+The output (if any) follows:
+
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2012 The MathWorks, Inc.
+                    R2012a (7.14.0.739) 64-bit (glnxa64)
+                              February 9, 2012
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+>> Sender: LSF System <lsfadmin@a3181>
+Subject: Job 40010333[11]: <jobs[1-50]> Done
+
+Job <jobs[1-50]> was submitted from host <brutus1> by user <lukasbi> in cluster <brutus>.
+Job was executed on host(s) <a3181>, in queue <pub.8h>, as user <lukasbi> in cluster <brutus>.
+</cluster/home02/infk/lukasbi> was used as the home directory.
+</cluster/home02/infk/lukasbi/rej/agents20> was used as the working directory.
+Started at Fri Oct 25 16:20:56 2013
+Results reported at Fri Oct 25 16:21:20 2013
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+matlab -nodisplay -singleCompThread -r simmain
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :     18.29 sec.
+    Max Memory :         1 MB
+    Max Swap   :        34 MB
+
+    Max Processes  :         1
+    Max Threads    :         1
+
+The output (if any) follows:
+
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2012 The MathWorks, Inc.
+                    R2012a (7.14.0.739) 64-bit (glnxa64)
+                              February 9, 2012
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+>> Sender: LSF System <lsfadmin@a3111>
+Subject: Job 40010333[20]: <jobs[1-50]> Done
+
+Job <jobs[1-50]> was submitted from host <brutus1> by user <lukasbi> in cluster <brutus>.
+Job was executed on host(s) <a3111>, in queue <pub.8h>, as user <lukasbi> in cluster <brutus>.
+</cluster/home02/infk/lukasbi> was used as the home directory.
+</cluster/home02/infk/lukasbi/rej/agents20> was used as the working directory.
+Started at Fri Oct 25 16:20:56 2013
+Results reported at Fri Oct 25 16:21:20 2013
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+matlab -nodisplay -singleCompThread -r simmain
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :     18.34 sec.
+    Max Memory :         1 MB
+    Max Swap   :        34 MB
+
+    Max Processes  :         1
+    Max Threads    :         1
+
+The output (if any) follows:
+
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2012 The MathWorks, Inc.
+                    R2012a (7.14.0.739) 64-bit (glnxa64)
+                              February 9, 2012
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+>> Sender: LSF System <lsfadmin@a3123>
+Subject: Job 40010333[13]: <jobs[1-50]> Done
+
+Job <jobs[1-50]> was submitted from host <brutus1> by user <lukasbi> in cluster <brutus>.
+Job was executed on host(s) <a3123>, in queue <pub.8h>, as user <lukasbi> in cluster <brutus>.
+</cluster/home02/infk/lukasbi> was used as the home directory.
+</cluster/home02/infk/lukasbi/rej/agents20> was used as the working directory.
+Started at Fri Oct 25 16:20:56 2013
+Results reported at Fri Oct 25 16:21:20 2013
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+matlab -nodisplay -singleCompThread -r simmain
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :     18.99 sec.
+    Max Memory :         1 MB
+    Max Swap   :        35 MB
+
+    Max Processes  :         1
+    Max Threads    :         1
+
+The output (if any) follows:
+
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2012 The MathWorks, Inc.
+                    R2012a (7.14.0.739) 64-bit (glnxa64)
+                              February 9, 2012
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+>> Sender: LSF System <lsfadmin@a3214>
+Subject: Job 40010333[15]: <jobs[1-50]> Done
+
+Job <jobs[1-50]> was submitted from host <brutus1> by user <lukasbi> in cluster <brutus>.
+Job was executed on host(s) <a3214>, in queue <pub.8h>, as user <lukasbi> in cluster <brutus>.
+</cluster/home02/infk/lukasbi> was used as the home directory.
+</cluster/home02/infk/lukasbi/rej/agents20> was used as the working directory.
+Started at Fri Oct 25 16:20:56 2013
+Results reported at Fri Oct 25 16:21:21 2013
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+matlab -nodisplay -singleCompThread -r simmain
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :     19.18 sec.
+    Max Memory :         1 MB
+    Max Swap   :        34 MB
+
+    Max Processes  :         1
+    Max Threads    :         1
+
+The output (if any) follows:
+
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2012 The MathWorks, Inc.
+                    R2012a (7.14.0.739) 64-bit (glnxa64)
+                              February 9, 2012
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+>> Sender: LSF System <lsfadmin@a3150>
+Subject: Job 40010333[22]: <jobs[1-50]> Done
+
+Job <jobs[1-50]> was submitted from host <brutus1> by user <lukasbi> in cluster <brutus>.
+Job was executed on host(s) <a3150>, in queue <pub.8h>, as user <lukasbi> in cluster <brutus>.
+</cluster/home02/infk/lukasbi> was used as the home directory.
+</cluster/home02/infk/lukasbi/rej/agents20> was used as the working directory.
+Started at Fri Oct 25 16:20:56 2013
+Results reported at Fri Oct 25 16:21:22 2013
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+matlab -nodisplay -singleCompThread -r simmain
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :     19.06 sec.
+    Max Memory :       158 MB
+    Max Swap   :      2006 MB
+
+    Max Processes  :         3
+    Max Threads    :        18
+
+The output (if any) follows:
+
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2012 The MathWorks, Inc.
+                    R2012a (7.14.0.739) 64-bit (glnxa64)
+                              February 9, 2012
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+>> Sender: LSF System <lsfadmin@a3165>
+Subject: Job 40010333[24]: <jobs[1-50]> Done
+
+Job <jobs[1-50]> was submitted from host <brutus1> by user <lukasbi> in cluster <brutus>.
+Job was executed on host(s) <a3165>, in queue <pub.8h>, as user <lukasbi> in cluster <brutus>.
+</cluster/home02/infk/lukasbi> was used as the home directory.
+</cluster/home02/infk/lukasbi/rej/agents20> was used as the working directory.
+Started at Fri Oct 25 16:20:56 2013
+Results reported at Fri Oct 25 16:21:22 2013
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+matlab -nodisplay -singleCompThread -r simmain
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :     18.55 sec.
+    Max Memory :       158 MB
+    Max Swap   :      2006 MB
+
+    Max Processes  :         3
+    Max Threads    :        18
+
+The output (if any) follows:
+
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2012 The MathWorks, Inc.
+                    R2012a (7.14.0.739) 64-bit (glnxa64)
+                              February 9, 2012
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+>> Sender: LSF System <lsfadmin@a3017>
+Subject: Job 40010333[18]: <jobs[1-50]> Done
+
+Job <jobs[1-50]> was submitted from host <brutus1> by user <lukasbi> in cluster <brutus>.
+Job was executed on host(s) <a3017>, in queue <pub.8h>, as user <lukasbi> in cluster <brutus>.
+</cluster/home02/infk/lukasbi> was used as the home directory.
+</cluster/home02/infk/lukasbi/rej/agents20> was used as the working directory.
+Started at Fri Oct 25 16:20:56 2013
+Results reported at Fri Oct 25 16:21:23 2013
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+matlab -nodisplay -singleCompThread -r simmain
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :     18.49 sec.
+    Max Memory :       150 MB
+    Max Swap   :      2006 MB
+
+    Max Processes  :         3
+    Max Threads    :        18
+
+The output (if any) follows:
+
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2012 The MathWorks, Inc.
+                    R2012a (7.14.0.739) 64-bit (glnxa64)
+                              February 9, 2012
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+>> Sender: LSF System <lsfadmin@a3137>
+Subject: Job 40010333[36]: <jobs[1-50]> Done
+
+Job <jobs[1-50]> was submitted from host <brutus1> by user <lukasbi> in cluster <brutus>.
+Job was executed on host(s) <a3137>, in queue <pub.8h>, as user <lukasbi> in cluster <brutus>.
+</cluster/home02/infk/lukasbi> was used as the home directory.
+</cluster/home02/infk/lukasbi/rej/agents20> was used as the working directory.
+Started at Fri Oct 25 16:22:05 2013
+Results reported at Fri Oct 25 16:22:27 2013
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+matlab -nodisplay -singleCompThread -r simmain
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :     18.04 sec.
+    Max Memory :         2 MB
+    Max Swap   :        35 MB
+
+    Max Processes  :         1
+    Max Threads    :         1
+
+The output (if any) follows:
+
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2012 The MathWorks, Inc.
+                    R2012a (7.14.0.739) 64-bit (glnxa64)
+                              February 9, 2012
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+>> Sender: LSF System <lsfadmin@a3041>
+Subject: Job 40010333[31]: <jobs[1-50]> Done
+
+Job <jobs[1-50]> was submitted from host <brutus1> by user <lukasbi> in cluster <brutus>.
+Job was executed on host(s) <a3041>, in queue <pub.8h>, as user <lukasbi> in cluster <brutus>.
+</cluster/home02/infk/lukasbi> was used as the home directory.
+</cluster/home02/infk/lukasbi/rej/agents20> was used as the working directory.
+Started at Fri Oct 25 16:22:05 2013
+Results reported at Fri Oct 25 16:22:28 2013
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+matlab -nodisplay -singleCompThread -r simmain
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :     18.25 sec.
+    Max Memory :         1 MB
+    Max Swap   :        35 MB
+
+    Max Processes  :         1
+    Max Threads    :         1
+
+The output (if any) follows:
+
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2012 The MathWorks, Inc.
+                    R2012a (7.14.0.739) 64-bit (glnxa64)
+                              February 9, 2012
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+>> Sender: LSF System <lsfadmin@a3123>
+Subject: Job 40010333[28]: <jobs[1-50]> Done
+
+Job <jobs[1-50]> was submitted from host <brutus1> by user <lukasbi> in cluster <brutus>.
+Job was executed on host(s) <a3123>, in queue <pub.8h>, as user <lukasbi> in cluster <brutus>.
+</cluster/home02/infk/lukasbi> was used as the home directory.
+</cluster/home02/infk/lukasbi/rej/agents20> was used as the working directory.
+Started at Fri Oct 25 16:22:05 2013
+Results reported at Fri Oct 25 16:22:28 2013
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+matlab -nodisplay -singleCompThread -r simmain
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :     18.65 sec.
+    Max Memory :         1 MB
+    Max Swap   :        35 MB
+
+    Max Processes  :         1
+    Max Threads    :         1
+
+The output (if any) follows:
+
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2012 The MathWorks, Inc.
+                    R2012a (7.14.0.739) 64-bit (glnxa64)
+                              February 9, 2012
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+>> Sender: LSF System <lsfadmin@a3152>
+Subject: Job 40010333[29]: <jobs[1-50]> Done
+
+Job <jobs[1-50]> was submitted from host <brutus1> by user <lukasbi> in cluster <brutus>.
+Job was executed on host(s) <a3152>, in queue <pub.8h>, as user <lukasbi> in cluster <brutus>.
+</cluster/home02/infk/lukasbi> was used as the home directory.
+</cluster/home02/infk/lukasbi/rej/agents20> was used as the working directory.
+Started at Fri Oct 25 16:22:05 2013
+Results reported at Fri Oct 25 16:22:28 2013
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+matlab -nodisplay -singleCompThread -r simmain
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :     18.17 sec.
+    Max Memory :         3 MB
+    Max Swap   :        34 MB
+
+    Max Processes  :         1
+    Max Threads    :         1
+
+The output (if any) follows:
+
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2012 The MathWorks, Inc.
+                    R2012a (7.14.0.739) 64-bit (glnxa64)
+                              February 9, 2012
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+>> Sender: LSF System <lsfadmin@a3132>
+Subject: Job 40010333[26]: <jobs[1-50]> Done
+
+Job <jobs[1-50]> was submitted from host <brutus1> by user <lukasbi> in cluster <brutus>.
+Job was executed on host(s) <a3132>, in queue <pub.8h>, as user <lukasbi> in cluster <brutus>.
+</cluster/home02/infk/lukasbi> was used as the home directory.
+</cluster/home02/infk/lukasbi/rej/agents20> was used as the working directory.
+Started at Fri Oct 25 16:22:05 2013
+Results reported at Fri Oct 25 16:22:29 2013
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+matlab -nodisplay -singleCompThread -r simmain
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :     18.53 sec.
+    Max Memory :        70 MB
+    Max Swap   :      1808 MB
+
+    Max Processes  :         3
+    Max Threads    :        17
+
+The output (if any) follows:
+
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2012 The MathWorks, Inc.
+                    R2012a (7.14.0.739) 64-bit (glnxa64)
+                              February 9, 2012
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+>> Sender: LSF System <lsfadmin@a3240>
+Subject: Job 40010333[33]: <jobs[1-50]> Done
+
+Job <jobs[1-50]> was submitted from host <brutus1> by user <lukasbi> in cluster <brutus>.
+Job was executed on host(s) <a3240>, in queue <pub.8h>, as user <lukasbi> in cluster <brutus>.
+</cluster/home02/infk/lukasbi> was used as the home directory.
+</cluster/home02/infk/lukasbi/rej/agents20> was used as the working directory.
+Started at Fri Oct 25 16:22:05 2013
+Results reported at Fri Oct 25 16:22:29 2013
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+matlab -nodisplay -singleCompThread -r simmain
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :     18.51 sec.
+    Max Memory :        91 MB
+    Max Swap   :      1809 MB
+
+    Max Processes  :         3
+    Max Threads    :        17
+
+The output (if any) follows:
+
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2012 The MathWorks, Inc.
+                    R2012a (7.14.0.739) 64-bit (glnxa64)
+                              February 9, 2012
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+>> Sender: LSF System <lsfadmin@a3082>
+Subject: Job 40010333[34]: <jobs[1-50]> Done
+
+Job <jobs[1-50]> was submitted from host <brutus1> by user <lukasbi> in cluster <brutus>.
+Job was executed on host(s) <a3082>, in queue <pub.8h>, as user <lukasbi> in cluster <brutus>.
+</cluster/home02/infk/lukasbi> was used as the home directory.
+</cluster/home02/infk/lukasbi/rej/agents20> was used as the working directory.
+Started at Fri Oct 25 16:22:05 2013
+Results reported at Fri Oct 25 16:22:29 2013
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+matlab -nodisplay -singleCompThread -r simmain
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :     18.40 sec.
+    Max Memory :         1 MB
+    Max Swap   :        35 MB
+
+    Max Processes  :         1
+    Max Threads    :         1
+
+The output (if any) follows:
+
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2012 The MathWorks, Inc.
+                    R2012a (7.14.0.739) 64-bit (glnxa64)
+                              February 9, 2012
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+>> Sender: LSF System <lsfadmin@a3036>
+Subject: Job 40010333[30]: <jobs[1-50]> Done
+
+Job <jobs[1-50]> was submitted from host <brutus1> by user <lukasbi> in cluster <brutus>.
+Job was executed on host(s) <a3036>, in queue <pub.8h>, as user <lukasbi> in cluster <brutus>.
+</cluster/home02/infk/lukasbi> was used as the home directory.
+</cluster/home02/infk/lukasbi/rej/agents20> was used as the working directory.
+Started at Fri Oct 25 16:22:05 2013
+Results reported at Fri Oct 25 16:22:29 2013
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+matlab -nodisplay -singleCompThread -r simmain
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :     18.48 sec.
+    Max Memory :         1 MB
+    Max Swap   :        34 MB
+
+    Max Processes  :         1
+    Max Threads    :         1
+
+The output (if any) follows:
+
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2012 The MathWorks, Inc.
+                    R2012a (7.14.0.739) 64-bit (glnxa64)
+                              February 9, 2012
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+>> Sender: LSF System <lsfadmin@a3214>
+Subject: Job 40010333[39]: <jobs[1-50]> Done
+
+Job <jobs[1-50]> was submitted from host <brutus1> by user <lukasbi> in cluster <brutus>.
+Job was executed on host(s) <a3214>, in queue <pub.8h>, as user <lukasbi> in cluster <brutus>.
+</cluster/home02/infk/lukasbi> was used as the home directory.
+</cluster/home02/infk/lukasbi/rej/agents20> was used as the working directory.
+Started at Fri Oct 25 16:22:05 2013
+Results reported at Fri Oct 25 16:22:29 2013
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+matlab -nodisplay -singleCompThread -r simmain
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :     19.59 sec.
+    Max Memory :         1 MB
+    Max Swap   :        34 MB
+
+    Max Processes  :         1
+    Max Threads    :         1
+
+The output (if any) follows:
+
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2012 The MathWorks, Inc.
+                    R2012a (7.14.0.739) 64-bit (glnxa64)
+                              February 9, 2012
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+>> Sender: LSF System <lsfadmin@a3026>
+Subject: Job 40010333[35]: <jobs[1-50]> Done
+
+Job <jobs[1-50]> was submitted from host <brutus1> by user <lukasbi> in cluster <brutus>.
+Job was executed on host(s) <a3026>, in queue <pub.8h>, as user <lukasbi> in cluster <brutus>.
+</cluster/home02/infk/lukasbi> was used as the home directory.
+</cluster/home02/infk/lukasbi/rej/agents20> was used as the working directory.
+Started at Fri Oct 25 16:22:05 2013
+Results reported at Fri Oct 25 16:22:29 2013
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+matlab -nodisplay -singleCompThread -r simmain
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :     18.97 sec.
+    Max Memory :         3 MB
+    Max Swap   :        34 MB
+
+    Max Processes  :         1
+    Max Threads    :         1
+
+The output (if any) follows:
+
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2012 The MathWorks, Inc.
+                    R2012a (7.14.0.739) 64-bit (glnxa64)
+                              February 9, 2012
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+>> Sender: LSF System <lsfadmin@a3037>
+Subject: Job 40010333[25]: <jobs[1-50]> Done
+
+Job <jobs[1-50]> was submitted from host <brutus1> by user <lukasbi> in cluster <brutus>.
+Job was executed on host(s) <a3037>, in queue <pub.8h>, as user <lukasbi> in cluster <brutus>.
+</cluster/home02/infk/lukasbi> was used as the home directory.
+</cluster/home02/infk/lukasbi/rej/agents20> was used as the working directory.
+Started at Fri Oct 25 16:22:05 2013
+Results reported at Fri Oct 25 16:22:29 2013
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+matlab -nodisplay -singleCompThread -r simmain
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :     18.87 sec.
+    Max Memory :         1 MB
+    Max Swap   :        34 MB
+
+    Max Processes  :         1
+    Max Threads    :         1
+
+The output (if any) follows:
+
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2012 The MathWorks, Inc.
+                    R2012a (7.14.0.739) 64-bit (glnxa64)
+                              February 9, 2012
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+>> Sender: LSF System <lsfadmin@a3240>
+Subject: Job 40010333[32]: <jobs[1-50]> Done
+
+Job <jobs[1-50]> was submitted from host <brutus1> by user <lukasbi> in cluster <brutus>.
+Job was executed on host(s) <a3240>, in queue <pub.8h>, as user <lukasbi> in cluster <brutus>.
+</cluster/home02/infk/lukasbi> was used as the home directory.
+</cluster/home02/infk/lukasbi/rej/agents20> was used as the working directory.
+Started at Fri Oct 25 16:22:05 2013
+Results reported at Fri Oct 25 16:22:32 2013
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+matlab -nodisplay -singleCompThread -r simmain
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :     18.01 sec.
+    Max Memory :       181 MB
+    Max Swap   :      2006 MB
+
+    Max Processes  :         3
+    Max Threads    :        18
+
+The output (if any) follows:
+
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2012 The MathWorks, Inc.
+                    R2012a (7.14.0.739) 64-bit (glnxa64)
+                              February 9, 2012
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+>> Sender: LSF System <lsfadmin@a3132>
+Subject: Job 40010333[27]: <jobs[1-50]> Done
+
+Job <jobs[1-50]> was submitted from host <brutus1> by user <lukasbi> in cluster <brutus>.
+Job was executed on host(s) <a3132>, in queue <pub.8h>, as user <lukasbi> in cluster <brutus>.
+</cluster/home02/infk/lukasbi> was used as the home directory.
+</cluster/home02/infk/lukasbi/rej/agents20> was used as the working directory.
+Started at Fri Oct 25 16:22:05 2013
+Results reported at Fri Oct 25 16:22:32 2013
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+matlab -nodisplay -singleCompThread -r simmain
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :     18.04 sec.
+    Max Memory :       159 MB
+    Max Swap   :      2006 MB
+
+    Max Processes  :         3
+    Max Threads    :        18
+
+The output (if any) follows:
+
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2012 The MathWorks, Inc.
+                    R2012a (7.14.0.739) 64-bit (glnxa64)
+                              February 9, 2012
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+>> Sender: LSF System <lsfadmin@a3112>
+Subject: Job 40010333[40]: <jobs[1-50]> Done
+
+Job <jobs[1-50]> was submitted from host <brutus1> by user <lukasbi> in cluster <brutus>.
+Job was executed on host(s) <a3112>, in queue <pub.8h>, as user <lukasbi> in cluster <brutus>.
+</cluster/home02/infk/lukasbi> was used as the home directory.
+</cluster/home02/infk/lukasbi/rej/agents20> was used as the working directory.
+Started at Fri Oct 25 16:23:13 2013
+Results reported at Fri Oct 25 16:23:36 2013
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+matlab -nodisplay -singleCompThread -r simmain
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :     18.09 sec.
+    Max Memory :         1 MB
+    Max Swap   :        35 MB
+
+    Max Processes  :         1
+    Max Threads    :         1
+
+The output (if any) follows:
+
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2012 The MathWorks, Inc.
+                    R2012a (7.14.0.739) 64-bit (glnxa64)
+                              February 9, 2012
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+>> Sender: LSF System <lsfadmin@a3090>
+Subject: Job 40010333[41]: <jobs[1-50]> Done
+
+Job <jobs[1-50]> was submitted from host <brutus1> by user <lukasbi> in cluster <brutus>.
+Job was executed on host(s) <a3090>, in queue <pub.8h>, as user <lukasbi> in cluster <brutus>.
+</cluster/home02/infk/lukasbi> was used as the home directory.
+</cluster/home02/infk/lukasbi/rej/agents20> was used as the working directory.
+Started at Fri Oct 25 16:23:13 2013
+Results reported at Fri Oct 25 16:23:36 2013
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+matlab -nodisplay -singleCompThread -r simmain
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :     18.23 sec.
+    Max Memory :         1 MB
+    Max Swap   :        34 MB
+
+    Max Processes  :         1
+    Max Threads    :         1
+
+The output (if any) follows:
+
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2012 The MathWorks, Inc.
+                    R2012a (7.14.0.739) 64-bit (glnxa64)
+                              February 9, 2012
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+>> Sender: LSF System <lsfadmin@a3062>
+Subject: Job 40010333[43]: <jobs[1-50]> Done
+
+Job <jobs[1-50]> was submitted from host <brutus1> by user <lukasbi> in cluster <brutus>.
+Job was executed on host(s) <a3062>, in queue <pub.8h>, as user <lukasbi> in cluster <brutus>.
+</cluster/home02/infk/lukasbi> was used as the home directory.
+</cluster/home02/infk/lukasbi/rej/agents20> was used as the working directory.
+Started at Fri Oct 25 16:23:13 2013
+Results reported at Fri Oct 25 16:23:36 2013
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+matlab -nodisplay -singleCompThread -r simmain
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :     18.76 sec.
+    Max Memory :         1 MB
+    Max Swap   :        34 MB
+
+    Max Processes  :         1
+    Max Threads    :         1
+
+The output (if any) follows:
+
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2012 The MathWorks, Inc.
+                    R2012a (7.14.0.739) 64-bit (glnxa64)
+                              February 9, 2012
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+>> Sender: LSF System <lsfadmin@a3068>
+Subject: Job 40010333[44]: <jobs[1-50]> Done
+
+Job <jobs[1-50]> was submitted from host <brutus1> by user <lukasbi> in cluster <brutus>.
+Job was executed on host(s) <a3068>, in queue <pub.8h>, as user <lukasbi> in cluster <brutus>.
+</cluster/home02/infk/lukasbi> was used as the home directory.
+</cluster/home02/infk/lukasbi/rej/agents20> was used as the working directory.
+Started at Fri Oct 25 16:23:13 2013
+Results reported at Fri Oct 25 16:23:37 2013
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+matlab -nodisplay -singleCompThread -r simmain
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :     18.67 sec.
+    Max Memory :         1 MB
+    Max Swap   :        34 MB
+
+    Max Processes  :         1
+    Max Threads    :         1
+
+The output (if any) follows:
+
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2012 The MathWorks, Inc.
+                    R2012a (7.14.0.739) 64-bit (glnxa64)
+                              February 9, 2012
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+>> Sender: LSF System <lsfadmin@a3226>
+Subject: Job 40010333[48]: <jobs[1-50]> Done
+
+Job <jobs[1-50]> was submitted from host <brutus1> by user <lukasbi> in cluster <brutus>.
+Job was executed on host(s) <a3226>, in queue <pub.8h>, as user <lukasbi> in cluster <brutus>.
+</cluster/home02/infk/lukasbi> was used as the home directory.
+</cluster/home02/infk/lukasbi/rej/agents20> was used as the working directory.
+Started at Fri Oct 25 16:23:13 2013
+Results reported at Fri Oct 25 16:23:37 2013
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+matlab -nodisplay -singleCompThread -r simmain
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :     18.09 sec.
+    Max Memory :        88 MB
+    Max Swap   :      1807 MB
+
+    Max Processes  :         3
+    Max Threads    :        17
+
+The output (if any) follows:
+
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2012 The MathWorks, Inc.
+                    R2012a (7.14.0.739) 64-bit (glnxa64)
+                              February 9, 2012
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+>> Sender: LSF System <lsfadmin@a3041>
+Subject: Job 40010333[50]: <jobs[1-50]> Done
+
+Job <jobs[1-50]> was submitted from host <brutus1> by user <lukasbi> in cluster <brutus>.
+Job was executed on host(s) <a3041>, in queue <pub.8h>, as user <lukasbi> in cluster <brutus>.
+</cluster/home02/infk/lukasbi> was used as the home directory.
+</cluster/home02/infk/lukasbi/rej/agents20> was used as the working directory.
+Started at Fri Oct 25 16:23:14 2013
+Results reported at Fri Oct 25 16:23:37 2013
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+matlab -nodisplay -singleCompThread -r simmain
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :     18.08 sec.
+    Max Memory :       150 MB
+    Max Swap   :      2006 MB
+
+    Max Processes  :         3
+    Max Threads    :        18
+
+The output (if any) follows:
+
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2012 The MathWorks, Inc.
+                    R2012a (7.14.0.739) 64-bit (glnxa64)
+                              February 9, 2012
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+>> Sender: LSF System <lsfadmin@a3025>
+Subject: Job 40010333[46]: <jobs[1-50]> Done
+
+Job <jobs[1-50]> was submitted from host <brutus1> by user <lukasbi> in cluster <brutus>.
+Job was executed on host(s) <a3025>, in queue <pub.8h>, as user <lukasbi> in cluster <brutus>.
+</cluster/home02/infk/lukasbi> was used as the home directory.
+</cluster/home02/infk/lukasbi/rej/agents20> was used as the working directory.
+Started at Fri Oct 25 16:23:13 2013
+Results reported at Fri Oct 25 16:23:37 2013
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+matlab -nodisplay -singleCompThread -r simmain
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :     18.68 sec.
+    Max Memory :        75 MB
+    Max Swap   :      1810 MB
+
+    Max Processes  :         3
+    Max Threads    :        17
+
+The output (if any) follows:
+
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2012 The MathWorks, Inc.
+                    R2012a (7.14.0.739) 64-bit (glnxa64)
+                              February 9, 2012
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+>> Sender: LSF System <lsfadmin@a3034>
+Subject: Job 40010333[45]: <jobs[1-50]> Done
+
+Job <jobs[1-50]> was submitted from host <brutus1> by user <lukasbi> in cluster <brutus>.
+Job was executed on host(s) <a3034>, in queue <pub.8h>, as user <lukasbi> in cluster <brutus>.
+</cluster/home02/infk/lukasbi> was used as the home directory.
+</cluster/home02/infk/lukasbi/rej/agents20> was used as the working directory.
+Started at Fri Oct 25 16:23:13 2013
+Results reported at Fri Oct 25 16:23:39 2013
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+matlab -nodisplay -singleCompThread -r simmain
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :     18.87 sec.
+    Max Memory :         3 MB
+    Max Swap   :        34 MB
+
+    Max Processes  :         1
+    Max Threads    :         1
+
+The output (if any) follows:
+
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2012 The MathWorks, Inc.
+                    R2012a (7.14.0.739) 64-bit (glnxa64)
+                              February 9, 2012
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+>> Sender: LSF System <lsfadmin@a3025>
+Subject: Job 40010333[47]: <jobs[1-50]> Done
+
+Job <jobs[1-50]> was submitted from host <brutus1> by user <lukasbi> in cluster <brutus>.
+Job was executed on host(s) <a3025>, in queue <pub.8h>, as user <lukasbi> in cluster <brutus>.
+</cluster/home02/infk/lukasbi> was used as the home directory.
+</cluster/home02/infk/lukasbi/rej/agents20> was used as the working directory.
+Started at Fri Oct 25 16:23:14 2013
+Results reported at Fri Oct 25 16:23:40 2013
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+matlab -nodisplay -singleCompThread -r simmain
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :     18.60 sec.
+    Max Memory :       158 MB
+    Max Swap   :      2006 MB
+
+    Max Processes  :         3
+    Max Threads    :        18
+
+The output (if any) follows:
+
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2012 The MathWorks, Inc.
+                    R2012a (7.14.0.739) 64-bit (glnxa64)
+                              February 9, 2012
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+>> Sender: LSF System <lsfadmin@a3226>
+Subject: Job 40010333[49]: <jobs[1-50]> Done
+
+Job <jobs[1-50]> was submitted from host <brutus1> by user <lukasbi> in cluster <brutus>.
+Job was executed on host(s) <a3226>, in queue <pub.8h>, as user <lukasbi> in cluster <brutus>.
+</cluster/home02/infk/lukasbi> was used as the home directory.
+</cluster/home02/infk/lukasbi/rej/agents20> was used as the working directory.
+Started at Fri Oct 25 16:23:14 2013
+Results reported at Fri Oct 25 16:23:40 2013
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+matlab -nodisplay -singleCompThread -r simmain
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :     18.64 sec.
+    Max Memory :       182 MB
+    Max Swap   :      2006 MB
+
+    Max Processes  :         3
+    Max Threads    :        18
+
+The output (if any) follows:
+
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2012 The MathWorks, Inc.
+                    R2012a (7.14.0.739) 64-bit (glnxa64)
+                              February 9, 2012
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+>> Sender: LSF System <lsfadmin@a3038>
+Subject: Job 40010333[42]: <jobs[1-50]> Done
+
+Job <jobs[1-50]> was submitted from host <brutus1> by user <lukasbi> in cluster <brutus>.
+Job was executed on host(s) <a3038>, in queue <pub.8h>, as user <lukasbi> in cluster <brutus>.
+</cluster/home02/infk/lukasbi> was used as the home directory.
+</cluster/home02/infk/lukasbi/rej/agents20> was used as the working directory.
+Started at Fri Oct 25 16:23:13 2013
+Results reported at Fri Oct 25 16:23:40 2013
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+matlab -nodisplay -singleCompThread -r simmain
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time   :     19.50 sec.
+    Max Memory :         1 MB
+    Max Swap   :        34 MB
+
+    Max Processes  :         1
+    Max Threads    :         1
+
+The output (if any) follows:
+
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2012 The MathWorks, Inc.
+                    R2012a (7.14.0.739) 64-bit (glnxa64)
+                              February 9, 2012
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+gl
+>> Sender: LSF System <lsfadmin@a3061>
+Subject: Job 40010333[2]: <jobs[1-50]> Exited
+
+Job <jobs[1-50]> was submitted from host <brutus1> by user <lukasbi> in cluster <brutus>.
+Job was executed on host(s) <a3061>, in queue <pub.8h>, as user <lukasbi> in cluster <brutus>.
+</cluster/home02/infk/lukasbi> was used as the home directory.
+</cluster/home02/infk/lukasbi/rej/agents20> was used as the working directory.
+Started at Fri Oct 25 16:18:38 2013
+Results reported at Sat Oct 26 04:18:43 2013
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+matlab -nodisplay -singleCompThread -r simmain
+------------------------------------------------------------
+
+TERM_RUNLIMIT: job killed after reaching LSF run time limit.
+Exited with exit code 137.
+
+Resource usage summary:
+
+    CPU time   :  43176.41 sec.
+    Max Memory :       200 MB
+    Max Swap   :      2070 MB
+
+    Max Processes  :         3
+    Max Threads    :        18
+
+The output (if any) follows:
+
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2012 The MathWorks, Inc.
+                    R2012a (7.14.0.739) 64-bit (glnxa64)
+                              February 9, 2012
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+gl
+gl
+gl
+
+------------------------------------------------------------------------
+       Segmentation violation detected at Sat Oct 26 04:18:43 2013
+------------------------------------------------------------------------
+
+Configuration:
+  Crash Decoding  : Disabled
+  Current Visual  : None
+  Default Encoding: UTF-8
+  GNU C Library   : 2.12 stable
+  MATLAB Root     : /cluster/apps/matlab/7.14
+  MATLAB Version  : 7.14.0.739 (R2012a)
+  Operating System: Linux 2.6.32-358.6.2.el6.x86_64 #1 SMP Thu May 16 20:59:36 UTC 2013 x86_64
+  Processor ID    : x86 Family 15 Model 65 Stepping 3, AuthenticAMD
+  Virtual Machine : Java 1.6.0_17-b04 with Sun Microsystems Inc. Java HotSpot(TM) 64-Bit Server VM mixed mode
+  Window System   : No active display
+
+Fault Count: 1
+
+
+Abnormal termination:
+Segmentation violation
+
+Register State (from fault):
+  RAX = 0000000000000000  RBX = 0000000000000000
+  RCX = ffffffffffffffff  RDX = 00002ba3b1a8a550
+  RSP = 00007fffccb65e80  RBP = 00007fffccb65f30
+  RSI = 00007fffccb66070  RDI = 000000000000000a
+
+   R8 = 0000000000000000   R9 = 0000000000000000
+  R10 = 0000000000000000  R11 = 0000000000000246
+  R12 = 00000000007d0000  R13 = 00007fffccb65f40
+  R14 = 00007fffccb66070  R15 = 0000000000000002
+
+  RIP = 00002ba3d06c6780  EFL = 0000000000010246
+
+   CS = 0033   FS = 0000   GS = 0000
+
+Stack Trace (from fault):
+[  0] 0x00002ba39fb9192e   /cluster/apps/matlab/7.14/bin/glnxa64/libmwfl.so+00370990 _ZN2fl4diag15stacktrace_base7captureERKNS0_14thread_contextEm+000158
+[  1] 0x00002ba39fb947d0   /cluster/apps/matlab/7.14/bin/glnxa64/libmwfl.so+00382928
+[  2] 0x00002ba39fb94b3b   /cluster/apps/matlab/7.14/bin/glnxa64/libmwfl.so+00383803 _ZN2fl4diag13terminate_logEPKcRKNS0_14thread_contextE+000171
+[  3] 0x00002ba3a0dd4203  /cluster/apps/matlab/7.14/bin/glnxa64/libmwmcr.so+01253891 _ZN2fl4diag13terminate_logEPKcPK8ucontext+000067
+[  4] 0x00002ba3a0dd10fd  /cluster/apps/matlab/7.14/bin/glnxa64/libmwmcr.so+01241341
+[  5] 0x00002ba3a0dd279d  /cluster/apps/matlab/7.14/bin/glnxa64/libmwmcr.so+01247133
+[  6] 0x00002ba3a0dd2925  /cluster/apps/matlab/7.14/bin/glnxa64/libmwmcr.so+01247525
+[  7] 0x00002ba3a0dd2f01  /cluster/apps/matlab/7.14/bin/glnxa64/libmwmcr.so+01249025
+[  8] 0x00002ba3a0dd33f5  /cluster/apps/matlab/7.14/bin/glnxa64/libmwmcr.so+01250293
+[  9] 0x00002ba3a25bf500                             /lib64/libpthread.so.0+00062720
+[ 10] 0x00002ba3d06c6780 /cluster/apps/matlab/7.14/sys/java/jre/glnxa64/jre/lib/amd64/server/libjvm.so+05863296
+[ 11] 0x00002ba3a25bf500                             /lib64/libpthread.so.0+00062720
+[ 12] 0x00002ba3a25bb43a                             /lib64/libpthread.so.0+00046138 pthread_cond_wait+000202
+[ 13] 0x00002ba3a0dcd774  /cluster/apps/matlab/7.14/bin/glnxa64/libmwmcr.so+01226612 _Z12mcr_run_mainRKN5boost9function2IiiA_PKcEEbiPS2_b+000532
+[ 14] 0x00000000004026e0       /cluster/apps/matlab/7.14/bin/glnxa64/MATLAB+00009952
+[ 15] 0x00002ba3a27ebcdd                                   /lib64/libc.so.6+00126173 __libc_start_main+000253
+[ 16] 0x0000000000402579       /cluster/apps/matlab/7.14/bin/glnxa64/MATLAB+00009593
+
+
+If this problem is reproducible, please submit a Service Request via:
+    http://www.mathworks.com/support/contact_us/
+
+A technical support engineer might contact you with further information.
+
+Thank you for your help.** This crash report has been saved to disk as /cluster/home02/infk/lukasbi/matlab_crash_dump.5346-1 **
+
+
+
+MATLAB is exiting because of fatal error
+/cluster/home02/infk/lukasbi/.lsbatch/1382706243.40010333.2: line 8:  5346 Killed                  matlab -nodisplay -singleCompThread -r simmain
+Sender: LSF System <lsfadmin@a3096>
+Subject: Job 40010333[38]: <jobs[1-50]> Exited
+
+Job <jobs[1-50]> was submitted from host <brutus1> by user <lukasbi> in cluster <brutus>.
+Job was executed on host(s) <a3096>, in queue <pub.8h>, as user <lukasbi> in cluster <brutus>.
+</cluster/home02/infk/lukasbi> was used as the home directory.
+</cluster/home02/infk/lukasbi/rej/agents20> was used as the working directory.
+Started at Fri Oct 25 16:22:05 2013
+Results reported at Sat Oct 26 04:23:10 2013
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+matlab -nodisplay -singleCompThread -r simmain
+------------------------------------------------------------
+
+TERM_RUNLIMIT: job killed after reaching LSF run time limit.
+Exited with exit code 137.
+
+Resource usage summary:
+
+    CPU time   :  43171.32 sec.
+    Max Memory :       173 MB
+    Max Swap   :      2070 MB
+
+    Max Processes  :         3
+    Max Threads    :        18
+
+The output (if any) follows:
+
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2012 The MathWorks, Inc.
+                    R2012a (7.14.0.739) 64-bit (glnxa64)
+                              February 9, 2012
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+gl
+gl
+gl
+
+------------------------------------------------------------------------
+       Segmentation violation detected at Sat Oct 26 04:22:09 2013
+------------------------------------------------------------------------
+
+Configuration:
+  Crash Decoding  : Disabled
+  Current Visual  : None
+  Default Encoding: UTF-8
+  GNU C Library   : 2.12 stable
+  MATLAB Root     : /cluster/apps/matlab/7.14
+  MATLAB Version  : 7.14.0.739 (R2012a)
+  Operating System: Linux 2.6.32-358.6.2.el6.x86_64 #1 SMP Thu May 16 20:59:36 UTC 2013 x86_64
+  Processor ID    : x86 Family 15 Model 65 Stepping 3, AuthenticAMD
+  Virtual Machine : Java 1.6.0_17-b04 with Sun Microsystems Inc. Java HotSpot(TM) 64-Bit Server VM mixed mode
+  Window System   : No active display
+
+Fault Count: 1
+
+
+Abnormal termination:
+Segmentation violation
+
+Register State (from fault):
+  RAX = 0000000000000000  RBX = 0000000000000000
+  RCX = ffffffffffffffff  RDX = 00002b25ba64e550
+  RSP = 00007fffb3662b00  RBP = 00007fffb3662bb0
+  RSI = 00007fffb3662cf0  RDI = 000000000000000a
+
+   R8 = 0000000000000000   R9 = 0000000000000000
+  R10 = 0000000000000000  R11 = 0000000000000246
+  R12 = 00000000007d0000  R13 = 00007fffb3662bc0
+  R14 = 00007fffb3662cf0  R15 = 0000000000000002
+
+  RIP = 00002b25d86c6780  EFL = 0000000000010246
+
+   CS = 0033   FS = 0000   GS = 0000
+
+Stack Trace (from fault):
+[  0] 0x00002b25a875592e   /cluster/apps/matlab/7.14/bin/glnxa64/libmwfl.so+00370990 _ZN2fl4diag15stacktrace_base7captureERKNS0_14thread_contextEm+000158
+[  1] 0x00002b25a87587d0   /cluster/apps/matlab/7.14/bin/glnxa64/libmwfl.so+00382928
+[  2] 0x00002b25a8758b3b   /cluster/apps/matlab/7.14/bin/glnxa64/libmwfl.so+00383803 _ZN2fl4diag13terminate_logEPKcRKNS0_14thread_contextE+000171
+[  3] 0x00002b25a9998203  /cluster/apps/matlab/7.14/bin/glnxa64/libmwmcr.so+01253891 _ZN2fl4diag13terminate_logEPKcPK8ucontext+000067
+[  4] 0x00002b25a99950fd  /cluster/apps/matlab/7.14/bin/glnxa64/libmwmcr.so+01241341
+[  5] 0x00002b25a999679d  /cluster/apps/matlab/7.14/bin/glnxa64/libmwmcr.so+01247133
+[  6] 0x00002b25a9996925  /cluster/apps/matlab/7.14/bin/glnxa64/libmwmcr.so+01247525
+[  7] 0x00002b25a9996f01  /cluster/apps/matlab/7.14/bin/glnxa64/libmwmcr.so+01249025
+[  8] 0x00002b25a99973f5  /cluster/apps/matlab/7.14/bin/glnxa64/libmwmcr.so+01250293
+[  9] 0x00002b25ab183500                             /lib64/libpthread.so.0+00062720
+[ 10] 0x00002b25d86c6780 /cluster/apps/matlab/7.14/sys/java/jre/glnxa64/jre/lib/amd64/server/libjvm.so+05863296
+[ 11] 0x00002b25ab183500                             /lib64/libpthread.so.0+00062720
+[ 12] 0x00002b25ab17f43a                             /lib64/libpthread.so.0+00046138 pthread_cond_wait+000202
+[ 13] 0x00002b25a9991774  /cluster/apps/matlab/7.14/bin/glnxa64/libmwmcr.so+01226612 _Z12mcr_run_mainRKN5boost9function2IiiA_PKcEEbiPS2_b+000532
+[ 14] 0x00000000004026e0       /cluster/apps/matlab/7.14/bin/glnxa64/MATLAB+00009952
+[ 15] 0x00002b25ab3afcdd                                   /lib64/libc.so.6+00126173 __libc_start_main+000253
+[ 16] 0x0000000000402579       /cluster/apps/matlab/7.14/bin/glnxa64/MATLAB+00009593
+
+
+If this problem is reproducible, please submit a Service Request via:
+    http://www.mathworks.com/support/contact_us/
+
+A technical support engineer might contact you with further information.
+
+Thank you for your help.** This crash report has been saved to disk as /cluster/home02/infk/lukasbi/matlab_crash_dump.14435-1 **
+
+
+
+MATLAB is exiting because of fatal error
+/cluster/home02/infk/lukasbi/.lsbatch/1382706243.40010333.38: line 8: 14435 Killed                  matlab -nodisplay -singleCompThread -r simmain

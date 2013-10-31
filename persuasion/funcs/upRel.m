@@ -17,7 +17,7 @@ function [ rel ] = upRel( arg )
     k=arg.k;
     
     %c exp
-    c=arg.cexp;
+    c=arg.crexp;
     
     %update relevances for i and j
     rel(k,op,i)=trel(k,op,i)+trel(k,op,j)*(1-trel(k,op,i))^c;

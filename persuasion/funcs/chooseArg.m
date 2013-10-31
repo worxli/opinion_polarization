@@ -15,6 +15,7 @@ function [k] = chooseArg( arg )
         sumrel = sumrel+relmat(kk,op,i);
         if(sumrel>=rd)
             k=kk;
+            break;
         end
     end
     

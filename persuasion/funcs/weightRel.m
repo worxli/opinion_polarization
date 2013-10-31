@@ -19,6 +19,7 @@ function [ rel ] = weightRel( arg )
     di = rel(k,op,i);
     dj = rel(k,op,j);
     
+    %{
     %%
     %sum of arguments needs to be 1
     %agent i
@@ -26,10 +27,18 @@ function [ rel ] = weightRel( arg )
     rel(:,op,i) = tmp.*rel(:,op,i);
     rel(k,op,i)=di;
     
-    %agent i
+    %agent j
     tmp = (1-dj)./(sum(rel(:,op,j),1)-dj);
     rel(:,op,j) = tmp.*rel(:,op,j);
     rel(k,op,j)=dj;
+    
+    %}
+    
+    tmp = 1./(sum(rel(:,op,i),1));
+    rel(:,op,i) = tmp.*rel(:,op,i);
+    
+    tmp = 1./(sum(rel(:,op,j),1));
+    rel(:,op,j) = tmp.*rel(:,op,j);
     
     rel(isnan(rel))=0;
 
