@@ -6,10 +6,10 @@ sim = true;
 details = false;
 
 %agents
-n=10;
+n=50;
 
 %homophily
-h=4:10;
+h=0:10;
 
 %issues (1 to 3)
 %set to one
@@ -17,7 +17,7 @@ opinions=1;
 
 %a
 %pa=1;
-aa=1.25:0.25:2;
+aa=1.75:0.25:2;
 
 %all agents know each other -> all 1's
 cont = ones(n,n);
@@ -26,9 +26,8 @@ cont = cont + diag(minus);
 
 jobindex=str2double(getenv('LSB_JOBINDEX'));
 
-for hh=h
 for pa=aa
-
+for hh=h
     
     seed=cputime*1000;
     s = RandStream('mt19937ar','Seed',seed);

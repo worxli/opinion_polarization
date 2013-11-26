@@ -1,25 +1,15 @@
 clear all;
 
-addpath funcs;
+addpath ../funcs;
 
 sim = true;
-details = true;
-
-%%
-if(sim)
-    %matlabpool('local', 12);
-end
-
-%profile on
+details = false;
 
 %agents
 n=10;
 
-%runs
-runs=1;
-
 %homophily
-h=0;
+h=0:10;
 
 %issues (1 to 3)
 %set to one
@@ -46,8 +36,7 @@ jobindex=str2double(getenv('LSB_JOBINDEX'));
 
 for hh=h
     
-    %seed=cputime*1000;
-    seed = 4140%[42136110];
+    seed=cputime*1000;
     s = RandStream('mt19937ar','Seed',seed);
     RandStream.setGlobalStream(s);
 
@@ -89,7 +78,6 @@ for hh=h
     
     %set struct as argument
     arg = struct('agents',n,'maxiter',iter,'opinions',opinions,'arguments',k,'caexp', ca, 'crexp',cr,'cont',cont,'relevancematrix',rel,'argumentmatrix',argmat,'homophily',hh,'run',jobindex,'h',hh);
-    arg.sim=false;
     arg.jobindex = jobindex;
     arg.details = details;
     arg.seed = seed;

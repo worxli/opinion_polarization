@@ -3,16 +3,16 @@ clear all;
 addpath funcs;
 
 sim = true;
-details = false;
+details = true;
 
 %agents
-n=20;
+n=100;
 
 %runs
-runs=2;
+runs=1;
 
 %homophily
-h=0:10;
+h=20;
 
 %issues (1 to 3)
 %set to one
@@ -22,7 +22,7 @@ opinions=1;
 iter=2000;
 
 %a
-pa=1;
+pa=2;
 
 %all agents know each other -> all 1's
 cont = ones(n,n);
@@ -67,7 +67,7 @@ for hh=h
     %do simulation or visualizing
     if(sim)
         arg.sim=true;
-        arg.maxiter=10^3;
+        arg.maxiter=10^10;
         simupdate(arg);
     else
         arg = simupdate(arg);

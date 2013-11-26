@@ -9,7 +9,7 @@ details = false;
 n=50;
 
 %homophily
-h=0:10;
+h=20:-1:16;
 
 %issues (1 to 3)
 %set to one

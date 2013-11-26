@@ -9,7 +9,7 @@ details = false;
 n=10;
 
 %homophily
-h=0:10;
+h=0:20;
 
 %issues (1 to 3)
 %set to one
@@ -19,7 +19,7 @@ opinions=1;
 iter=2000;
 
 %arguments (only persuasion)
-k=5;
+k=6;
 
 %exp for relevance -> no overshooting
 cr = 1;

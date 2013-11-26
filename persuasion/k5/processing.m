@@ -3,7 +3,7 @@ clear all;
 %% parameters
 homophily=0:20;
 runs=1:50;
-agents=[10,20,50]%[10,20,50,100];
+agents=100%[10,20,50,100];
 
 %%what to do?
 % 1 = opiniondistribution
@@ -13,8 +13,8 @@ agents=[10,20,50]%[10,20,50,100];
 action = 4;
 
 %not needed for action 4
-%run = 1;
-%homophiliy = 8;
+run = 1;
+homophiliy = 8;
 
 
 %%

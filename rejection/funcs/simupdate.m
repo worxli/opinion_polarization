@@ -25,7 +25,7 @@ function arg = simpudate( arg )
             if mod(loop,opmat_len)==0
                 opstart = loop-opmat_len+1;
                 Data = struct(['opvec' num2str(opstart) 'to' num2str(loop)], opmat);
-                save(['h' num2str(arg.h) '-run-' num2str(arg.run) '.mat'], '-struct', 'Data', '-append');
+                save(['h' num2str(arg.h) '-a-' num2str(arg.pa) '-run-' num2str(arg.run) '.mat'], '-struct', 'Data', '-append');
                 opmat = [];
             end   
         end
@@ -59,12 +59,12 @@ function arg = simpudate( arg )
         end
         
         if mod(loop,n/2)==0
-          
+            
             %gleichgewichte
             gl = calGleichgewichte(arg.agents, arg.opvec, arg.bez, arg.opinions, arg.c, arg.pa);
             if(gl==1)
                 arg.gl = loop;
-                arg.pol = calPol(arg.agents, arg.opvec, arg.opinions);
+                %arg.pol = calPol(arg.agents, arg.opvec, arg.opinions);
                 if arg.sim
                     disp('gl');
                     break;
@@ -81,7 +81,7 @@ function arg = simpudate( arg )
     else
         if arg.details
             Data = struct('opvecend', opmat);
-            save(['h' num2str(arg.h) '-run-' num2str(arg.run) '.mat'], '-struct', 'Data', '-append');
+            save(['h' num2str(arg.h) '-a-' num2str(arg.pa) '-run-' num2str(arg.run) '.mat'], '-struct', 'Data', '-append');
         end
         
         arg_end = arg;

@@ -23,6 +23,8 @@ function arg = simpudate( arg )
             opmat = [opmat,arg.opvec];
             
             if mod(loop,opmat_len)==0
+                %arg.argumentmatrix
+                %arg.relevancematrix
                 opstart = loop-opmat_len+1;
                 Data = struct(['opvec' num2str(opstart) 'to' num2str(loop)], opmat);
                 save(['h' num2str(arg.h) '-run-' num2str(arg.run) '.mat'], '-struct', 'Data', '-append');
