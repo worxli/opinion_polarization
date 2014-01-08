@@ -1,9 +1,9 @@
 clear all;
 
 %% parameters
-homophily=0:20;
+homophily=0:0.5:10;
 runs=1:50;
-agents=[10,20,50]%[10,20,50,100];
+agents=[10,20,50,100];
 
 %%what to do?
 % 1 = opiniondistribution
@@ -22,14 +22,14 @@ action = 4;
 for a=agents
     
     %%foldername
-    foldername = ['agents' num2str(a)];
+    foldername = ['ag' num2str(a) ''];
     
     hiter = [];
     hpol = [];
     
     for h=homophily
         
-        if action ~= 4
+        if action ~= 4 && action ~=5
                 
             %%filename
             filename = ['h' num2str(h) '-run-' num2str(run) '.mat']; 
@@ -77,13 +77,13 @@ for a=agents
             switch action
                 case 1
                     arg.data = histc(vdata,[-1:0.01:1]);
-                    visual(arg, 1);
+                    visualp(arg, 1);
                 case 2
                     arg.data = vdata;
-                    visual(arg, 2);      
+                    visualp(arg, 2);      
                 case 3  
                     arg.data = calPola(vdata);
-                    visual(arg, 3);  
+                    visualp(arg, 3);  
             end
   
         else
@@ -116,7 +116,7 @@ for a=agents
                 
             end 
             l = length(iter);
-            if l~=50
+            if l<=49
                 h
                 l
             end
@@ -132,6 +132,11 @@ for a=agents
     if action == 4
         arg.pol = hpol;
         arg.iter = hiter;
-        visual(arg,4);
+        visualp(arg,4);
+    end
+    
+    if action == 5
+        arg.pol = hpol;
+        visualp(arg,5);
     end
 end

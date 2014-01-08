@@ -2,8 +2,8 @@ clear all;
 
 addpath funcs;
 
-sim = true;
-details = true;
+sim = false;
+details = false;
 
 %%
 if(sim)
@@ -13,23 +13,23 @@ end
 %profile on
 
 %agents
-n=10;
+n=100;
 
 %runs
 runs=1;
 
 %homophily
-h=0;
+h=10;
 
 %issues (1 to 3)
 %set to one
 opinions=1;
 
 %iterations
-iter=2000;
+iter=3000;
 
 %arguments (only persuasion)
-k=5;
+k=6;
 
 %exp for relevance -> no overshooting
 cr = 1;
@@ -46,8 +46,8 @@ jobindex=str2double(getenv('LSB_JOBINDEX'));
 
 for hh=h
     
-    %seed=cputime*1000;
-    seed = 4140%[42136110];
+    seed=cputime*1000;
+    %seed = 2.830625000000000e+05;
     s = RandStream('mt19937ar','Seed',seed);
     RandStream.setGlobalStream(s);
 

@@ -52,7 +52,7 @@ function arg = simpudate( arg )
         arg.opvec = upOpinion( arg );
         
         if(~arg.sim)
-            data = createVisData( arg.opvec, loop, 0.02, data );
+            data = createVisData( arg.opvec, loop, 0.1, data );
             opchange = [opchange,arg.opvec];
             pol = [pol;calPol(arg.agents, arg.opvec, arg.opinions)];
         end
@@ -67,9 +67,9 @@ function arg = simpudate( arg )
     end  
     
     if(~arg.sim)
-        save 'arg.mat' arg
+        %save 'arg.mat' arg
         visual( arg, data, pol );
-        visopchange(opchange,iter);
+        %visopchange(opchange,iter);
     else 
         if arg.details
             Data = struct('opvecend', opmat);

@@ -19,8 +19,7 @@ function [i,j] = chooseAgent( arg )
     
     %make sure connection values are between 0 and 2 -> use h for strength
     %of homophily, if h=0 -> con=1 for all agents
-    con = (2-hdist).^h;
-    
+    con = (1-hdist).^h;
     
     %can't choose himself for interaction
     con(i)=0;

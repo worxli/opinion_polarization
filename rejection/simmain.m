@@ -2,17 +2,17 @@ clear all;
 
 addpath funcs;
 
-sim = true;
-details = true;
+sim =true;
+details = false;
 
 %agents
-n=100;
+n=10;
 
 %runs
 runs=1;
 
 %homophily
-h=20;
+h=0.5;
 
 %issues (1 to 3)
 %set to one
@@ -22,7 +22,7 @@ opinions=1;
 iter=2000;
 
 %a
-pa=2;
+pa=1.5;
 
 %all agents know each other -> all 1's
 cont = ones(n,n);
@@ -43,13 +43,6 @@ for hh=h
 
     %create bez
     bez = zeros(n,n);
-    for i=1:n
-        for j=i+1:n
-           diff = norm(opvec(i,:)-opvec(j,:),1);
-           bez(i,j) = 1 - diff/opinions;
-           bez(j,i) = 1 - diff/opinions; 
-        end
-    end
 
     %all agents know each other -> all 1's
     cont = ones(n,n);

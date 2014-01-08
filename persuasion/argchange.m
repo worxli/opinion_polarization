@@ -34,10 +34,14 @@ end
 
 
 figure;
-surf(x,x,chmati);
-xlabel('j');
-ylabel('i');
-zlabel('Change of arg i');
+%surf(x,x,chmati);
+surf(x,x,nmati);
+xlabel('argument valence of \it j \rm at \it t-1');
+ylabel('argument valence of \it i \rm at \it t-1');
+zlabel('argument valence of i at t');
+
+
+%{
 
 figure;
 surf(x,x,chmatj);
@@ -58,3 +62,5 @@ surf(x,x,nmatj);
 xlabel('j');
 ylabel('i');
 zlabel('new value of arg j');
+
+%}
