@@ -1,5 +1,11 @@
 *.jpg
 *.mat
+*.fig
 old_rejection/
 postprocessing/
 processing/
+paper_abb/*
+*/ag10/*
+*/ag20/*
+*/ag50/*
+*/ag100/*

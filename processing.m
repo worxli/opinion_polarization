@@ -2,7 +2,7 @@ clear all;
 
 %% parameters
 homophily=0:0.5:10;
-runs=1:5;
+runs=1:50;
 agent=[10,20,50,100];
 a=1.5;
 
@@ -62,10 +62,7 @@ for agents = agent
 
             l=length(pol);
             if l<50
-                agents
-                h
-                l
-                a
+
             end
 
 
@@ -85,6 +82,7 @@ for agents = agent
     
 end
 
+arg.agents = agent;
 arg.pol = hhhpol;
 visualp(arg);
 

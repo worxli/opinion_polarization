@@ -28,15 +28,21 @@ function [] = visualp( arg )
     
     figure;
     for i = 1:length(arg.pol(1,1,:))
-        i
         
-        data1 = arg.pol(:,1:length(h),i)
+        data1 = arg.pol(:,1:length(h),i);
         data2 = arg.pol(:,length(h)+1:end,i);
         
         subplot(2,2,i);
+        %title([num2str(arg.agents(i)) ' agents'] );
         g1 = plot(h, mean(data1),'r', 'LineWidth',4); 
         hold on;
+        title([num2str(arg.agents(i)) ' agents'] );
         g2 = plot(h, mean(data2), 'LineWidth',4);
+        axis([0 10 0 1]);
+        legend('rejection', 'persuasion');
+        ylabel('average polarization');
+        xlabel('homophily h');
+        hold off;
         set(g2, 'Color', [0 0.5 1]);
     end
     
